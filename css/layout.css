@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: flex-start;
+}
+.nav-bar{
+	display: flex;
+    align-items: center;
+	padding: .5rem;
+}
+
+.nav-bar > a{
+	display: block;
+	padding: 1rem;
+}
+
+.icons {
+    display: flex;
+    gap: 10px;
+}
