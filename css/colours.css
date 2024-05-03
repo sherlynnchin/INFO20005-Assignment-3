@@ -10,8 +10,9 @@ p {
     color: #303030;
   }
 
-.nav-bar > li > a{
+.nav-bar > a{
   color: #8C602D;
+  text-decoration: none;
   }
 
 .overlay-text h1 {
@@ -24,4 +25,14 @@ p {
 
 .overlay-text p {
     color: white;
+}
+
+.shop-now {
+  background-color: #C8A36F;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
+}
+
+.category-heading h1 {
+  color: #8C602D;
 }
