@@ -1,6 +1,6 @@
 .yeseva-one-regular {
   font-family: 'Yeseva One', serif;
-  font-weight: 400;
+  font-weight: 100;
   font-style: normal;
 }
 
@@ -61,5 +61,23 @@ p {
 
 .category-heading h1 {
   font-family: 'Yeseva One';
+  letter-spacing: 1px;
   font-size: 30px;
+}
+
+.button-label {
+  font-family: 'KoHo';
+  font-size: 20px;
+}
+
+.about-text h1 {
+  font-family: 'Yeseva One';
+  font-size: 80px;
+  letter-spacing: 20px;
+}
+
+.about-text h2 {
+  font-family: 'Yeseva One';
+  font-size: 60px;
+  letter-spacing: 20px;
 }
