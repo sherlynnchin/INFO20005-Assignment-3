@@ -37,22 +37,22 @@ p {
   color: #303030;
 }
 
-button.dogs {
+.button-dogs {
   background-color: rgba(255, 206, 206, 0.62);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
 }
 
-button.cats {
+.button-cats {
   background-color: rgba(255, 206, 206, 0.4);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
 }
 
-button.fish {
+.button-fish {
   background-color: rgba(255, 206, 206, 0.66);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
 }
 
-button.others {
+.button-others {
   background-color: rgba(255, 206, 206, 0.61);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
 }
@@ -63,4 +63,8 @@ button.others {
 
 .about-text h2 {
   color: #8C602D;
+}
+
+.info-item {
+  color: #303030;
 }

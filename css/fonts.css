@@ -43,13 +43,11 @@ p {
   }
 
 .overlay-text-header h2 {
-  font-family: 'Palanquin Dark';
   letter-spacing: 10px;
   font-size: 32px;
 }
 
 .overlay-text-sub p {
-  font-family: 'KoHo';
   letter-spacing: 1px;
   font-size: 20px;
 }
@@ -60,7 +58,6 @@ p {
 }
 
 .category-heading h1 {
-  font-family: 'Yeseva One';
   letter-spacing: 1px;
   font-size: 30px;
 }
@@ -71,7 +68,6 @@ p {
 }
 
 .about-text h1 {
-  font-family: 'Yeseva One';
   font-size: 80px;
   letter-spacing: 20px;
 }
@@ -80,4 +76,17 @@ p {
   font-family: 'Yeseva One';
   font-size: 60px;
   letter-spacing: 20px;
+}
+
+.about-us-desc p {
+  font-size: 18px;
+}
+
+.info-item h2 {
+  font-family: 'Yeseva One';
+  font-size: 24px;
+}
+
+.info-item p {
+  font-size: 16px;
 }
