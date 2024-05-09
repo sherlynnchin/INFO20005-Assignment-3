@@ -10,6 +10,10 @@ p {
     color: #303030;
   }
 
+nav {
+  background-color: #e6dbc9;
+}
+
 .nav-bar > a{
   color: #8C602D;
   text-decoration: none;
@@ -67,4 +71,13 @@ p {
 
 .info-item {
   color: #303030;
+}
+
+footer {
+  background-color: #858F7E;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: white;
 }

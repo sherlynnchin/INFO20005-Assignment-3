@@ -90,3 +90,8 @@ p {
 .info-item p {
   font-size: 16px;
 }
+
+.footer-nav a {
+  font-family: 'Yeseva One';
+  font-size: 2em;
+}
