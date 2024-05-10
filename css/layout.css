@@ -78,9 +78,9 @@ main {
     font-size: 1.8rem;
   }
 
-.shopping-cart img{
-    width: 47px;
-    height: 47px;
+.shopping-cart-button img{
+    width: 2em;
+    height: 2em;
 }
 
 /*main display*/
