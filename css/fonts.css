@@ -36,62 +36,75 @@ p {
   font-family: 'Palanquin Dark';
   }
 
+.search-input {
+  font-size: 1em;
+}
+
+.search-input::placeholder {
+  font-size: 1em;
+}
+
 .overlay-text-header h1 {
   font-family: 'Palanquin Dark';
-  font-size: 48px;
-  letter-spacing: 15px;
+  font-size: 3em;
+  letter-spacing: 0.4em;
   }
 
 .overlay-text-header h2 {
-  letter-spacing: 10px;
-  font-size: 32px;
+  letter-spacing: 0.3em;
+  font-size: 2em;
 }
 
 .overlay-text-sub p {
-  letter-spacing: 1px;
-  font-size: 20px;
+  letter-spacing: 0.02em;
+  font-size: 1.2em;
 }
 
 .shop-now {
   font-family: 'KoHo';
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .category-heading h1 {
-  letter-spacing: 1px;
-  font-size: 30px;
+  letter-spacing: 0.02em;
+  font-size: 2em;
 }
 
 .button-label {
   font-family: 'KoHo';
-  font-size: 20px;
+  font-size: 1.2em;
 }
 
 .about-text h1 {
-  font-size: 80px;
-  letter-spacing: 20px;
+  font-size: 6em;
+  letter-spacing: 0.3em;
 }
 
 .about-text h2 {
   font-family: 'Yeseva One';
-  font-size: 60px;
-  letter-spacing: 20px;
+  font-size: 5.5em;
+  letter-spacing: 0.4em;
 }
 
 .about-us-desc p {
-  font-size: 18px;
+  font-size: 1.1em;
 }
 
 .info-item h2 {
   font-family: 'Yeseva One';
-  font-size: 24px;
+  font-size: 1.4em;
 }
 
 .info-item p {
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .footer-nav a {
   font-family: 'Yeseva One';
   font-size: 2em;
+}
+
+.contact-details {
+  font-family: 'KoHo';
+  letter-spacing: 0.04em;
 }
