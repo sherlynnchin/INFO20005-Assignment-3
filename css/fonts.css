@@ -37,10 +37,12 @@ p {
   }
 
 .search-input {
+  font-family: 'KoHo';
   font-size: 1em;
 }
 
 .search-input::placeholder {
+  font-family: 'KoHo';
   font-size: 1em;
 }
 
