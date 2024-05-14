@@ -120,3 +120,17 @@ p {
   font-family: 'KoHo';
   letter-spacing: 0.02em;
 }
+
+.product-details h1{
+  font-family: 'KoHo';
+  font-size: 2em;
+}
+
+.product-detail-price h2 {
+  font-family: 'KoHo';
+  font-family: 2em;
+}
+
+.product-detail-selection {
+  font-family: 'KoHo';
+}
