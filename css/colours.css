@@ -73,6 +73,14 @@ nav {
   color: #303030;
 }
 
+.product-button {
+  background-color: rgba(206, 222, 195, 1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
+}
+
+
+
+
 footer {
   background-color: #858F7E;
   color: white;
@@ -85,4 +93,12 @@ footer {
 
 .footer-contact h1 {
   color: white;
+}
+
+.footer-socials h1 {
+  color: white;
+}
+
+.best-sellers-header h1 {
+  color: #303030;
 }
