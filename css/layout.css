@@ -524,7 +524,7 @@ footer {
 }
 
 .product-details {
-    margin-left: 2em;
+    margin-left: 4em;
     margin-top: 4%;
     display: flex;
     flex-direction: column;
@@ -543,8 +543,8 @@ footer {
 }
 
 .stars img {
-    max-width: 60%;
-    max-height: 60%;
+    max-width: 40%;
+    max-height: 40%;
     margin-right: 2em;
 }
 
@@ -555,6 +555,7 @@ footer {
 .size-selection {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .circles {
@@ -562,13 +563,228 @@ footer {
     flex-direction: row;
 }
 
+.product-detail-selection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .size-circle-container {
-    width: 2em;
-    height: 2em; 
+    width: 2.5em;
+    height: 2.5em; 
     border-radius: 50%; 
     display: flex;
     align-items: center;
     justify-content: center;
     margin-right: 10px;
     padding: 2%;
+    cursor: pointer;
+}
+
+.quantity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.counter {
+    width: 150px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter input {
+    width: 5em;
+    border: 0;
+    appearance: none;
+    outline: 0;
+}
+.counter span {
+    display: block;
+    font-size: 25px;
+    padding: 0 10px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.add-to-cart {
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+}
+
+.addtocart{
+    display: block;
+    padding: 0.5em 1em 0.5em 1em;
+    border-radius: 100px;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    height: 6em;
+    width: 30em;
+    overflow:hidden;
+    transition:transform 0.1s;
+    z-index:1;
+}
+
+.addtocart:hover{
+    transform:scale(1.1);
+}
+
+.pretext{
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.done {
+    position:absolute;
+    width:100%;
+    top:0;
+    left:0;
+    transition:transform 0.3s ease;
+    transform:translate(-110%) skew(-40deg);
+}
+
+.more-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6em;
+}
+
+.more-info-button {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3em; 
+}
+
+.more-info-button img {
+    margin-left: 2em;
+    width: 1em;
+    height: 1em;
+}
+
+.more-info-button button {
+    padding: 0.5em 24em;
+    border: none; 
+    border-radius: 10px;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+#description,
+#recommendation,
+#shipping {
+    max-width: 60%;
+    text-align: center;
+    text-wrap: break-word;
+}
+
+.ingredients {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+.ingredient-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.big-circle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+}
+
+.big-circle1,
+.big-circle2, 
+.big-circle3 {
+    width: 16em;
+    height: 16em; 
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.big-circle1 img,
+.big-circle2 img,
+.big-circle3 img {
+    width: 10em;
+    height: 10em;
+}
+
+.ingredient-details p {
+    max-width: 80%;
+}
+
+
+.reviews-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.reviews {
+    margin-left: 7em;
+    margin-right: 7em;
+    margin-bottom: 5em;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    overflow-x: auto;
+}
+
+.reviews-list {
+    display: inline-flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 1em;
+}
+
+.review {
+    padding: 1em 1em;
+    margin-right: 1em;
+    min-width: 20em;
+    min-height: 14em;
+    margin-bottom: 2em;
+    border-radius: 20px;
+    border: none;
+}
+
+.review img {
+    max-width: 40%;
+    max-height: 40%;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.profile img {
+    margin-right: 1em;
+    max-width: 10%;
+    max-height: 10%;
 }

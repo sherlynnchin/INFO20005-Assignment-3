@@ -133,3 +133,82 @@ footer {
   background-color: #C8A36F;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
 }
+
+.size-circle-container input[type="radio"]:checked {
+  background-color: #F6E0C1;
+}
+
+.counter input {
+  color: #303030;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.counter span {
+  color: #303030;
+}
+
+.addtocart{
+  background:#C3D9DE;
+}
+
+.pretext{
+  color:#454545;
+  background:#C3D9DE;
+}
+
+.fa-cart-plus{
+  background:#C3D9DE;
+}
+
+.posttext{
+  background:#FFB9D2;
+}
+
+.fa-check{
+  background:#FFB9D2;
+}
+
+.done {
+  background:#FFB9D2;
+}
+
+.more-info-button button {
+  background-color: #EFEFEF;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.big-circle1 {
+  background-color: #edb9f5a9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.big-circle2 {
+  background-color: #f3d74a57;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.big-circle3 {
+  background-color: #c598ff9e;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.ingredients-header h1{
+  color: #303030;
+}
+
+.review {
+  background-color: #cedec3a3;
+}
+
+.reviews-header h1 {
+  color: #303030;
+}
+
+.review h1 {
+  color: #303030;
+}
+
+.profile h1 {
+  color: #303030;
+}

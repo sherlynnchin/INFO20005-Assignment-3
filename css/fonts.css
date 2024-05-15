@@ -134,3 +134,50 @@ p {
 .product-detail-selection {
   font-family: 'KoHo';
 }
+
+.counter input {
+  font-family: 'KoHo';
+  line-height: 1.5em;
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.pretext {
+  font-family: 'KoHo';
+  font-size: 1.5em;
+}
+
+.posttext {
+  font-family: 'KoHo';
+  font-size: 1em;
+}
+
+.more-info-button button {
+  font-family: 'KoHo';
+  font-size: 1em;
+}
+
+.ingredients-header {
+  font-family: 'Yeseva One';
+  letter-spacing: 0.05em;
+}
+
+.big-circle-container h2{
+  font-family: 'KoHo';
+  font-size: 1.5em;
+}
+
+.big-circle-container p {
+  font-family: 'KoHo';
+  font-size: 1em;
+  text-align: center;
+}
+
+.reviews-header h1 {
+  font-weight: 200;
+}
+
+.review h1 {
+  font-family: 'KoHo';
+  font-size: 1.5em;
+}

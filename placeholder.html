@@ -1,0 +1,44 @@
+<div class="product-details">
+    <div class="product-header">
+        <h1>Coprice Working Dog Beef 20kg</h1>
+    </div>
+    <div class="product-rating">
+        <div class="stars">
+            <img src="assets/images/4-5-star-rating.png" alt="Star Rating">
+            <a href="#" class="reviews">
+                <p>(197 reviews)</p>
+            </a>
+        </div>
+    </div>
+    <div class="product-detail-price">
+        <h2 id="priceDisplay">$75.99</h2>
+    </div>
+    <div class="product-detail-selection">
+        <div class="size-selection">
+            <h3>Size (kg)</h3>
+            <div class="circles">
+                <div class="size-circle-container">
+                    <input type="radio" name="size" value="10" onchange="updatePrice(this.value)" checked>
+                    <label for="size-10">10</label>
+                </div>
+                <div class="size-circle-container">
+                    <input type="radio" name="size" value="20" onchange="updatePrice(this.value)">
+                    <label for="size-20">20</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<script>
+function updatePrice(size) {
+    if (size === "10") {
+        document.getElementById("priceDisplay").innerText = "$45.99";
+    } else if (size === "20") {
+        document.getElementById("priceDisplay").innerText = "$75.99";
+    }
+}
+</script>

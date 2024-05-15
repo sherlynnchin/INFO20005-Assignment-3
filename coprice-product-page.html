@@ -87,31 +87,154 @@
                 <div class="product-rating">
                     <div class="stars">
                         <img src="assets/images/4-5-star-rating.png" alt="Star Rating">
-                        <a href="#" class="reviews">
+                        <a href="#reviews" class="current-reviews">
                             <p>(197 reviews)</p>
                         </a>
                     </div>
                 </div>
                 <div class="product-detail-price">
-                    <h2>$75.99</h2>
+                    <h2 id="priceDisplay">$45.99</h2>
                 </div>
                 <div class="product-detail-selection">
                     <div class="size-selection">
                         <h3>Size (kg)</h3>
                         <div class="circles">
                             <div class="size-circle-container">
-                                <p>10</p>
+                                <input type="radio" name="size" value="10" onchange="updatePrice(this.value)" checked>
+                                <label for="size-10">10</label>
                             </div>
                             <div class="size-circle-container">
-                                <p>20</p>
+                                <input type="radio" name="size" value="20" onchange="updatePrice(this.value)">
+                                <label for="size-20">20</label>
                             </div>
                         </div>
+                    </div>
+                    <div class="quantity">
+                        <h3>Quantity</h3>
+                        <div class="counter">
+                            <span class="down" onClick="decreaseCount(this)">-</span>
+                            <input type="text" value="1">
+                            <span class="up" onClick='increaseCount(this)'>+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <button class="addtocart">
+                        <div class="pretext">Add to Cart</div>
+                        <div class="pretext done">
+                            <div class="posttext">Added to Cart!</div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="more-info">
+            <div class="more-info-button">
+                <button id="toggleButton" onclick="toggleDescription('description')">Product Description<img src="assets/images/down-arrow.png" alt="Down Arrow"></button>
+                <div id="description" style="display: none;">
+                    <p>Working dogs are elite endurance athletes, high performance labourers and your best mates. 
+                        They keep you company during long, strenuous days and push themselves in through the toughest conditions, 
+                        so they deserve nothing but superior quality nutrition.</p>
+                    <p>CopRice Working Dog Adult Beef is specially developed nourishment for hard working adult dogs in need of diets 
+                        high in fat with balanced and highly digestible carbohydrate sources, to fuel the sustainable energy required 
+                        for gruelling workloads.</p>
+                </div>
+            </div>
+            <div class="more-info-button">
+                <button id="toggleButton" onclick="toggleDescription('recommendation')">Recommended For<img src="assets/images/down-arrow.png" alt="Down Arrow"></button>
+                <div id="recommendation" style="display: none;">
+                    <p>Recommended for dogs up to 7 years of age.</p>
+                </div>
+            </div>
+            <div class="more-info-button">
+                <button id="toggleButton" onclick="toggleDescription('shipping')">Shipping Details<img src="assets/images/down-arrow.png" alt="Down Arrow"></button>
+                <div id="shipping" style="display: none;">
+                    <p>Stefmar is able to deliver this product right to your doorstep!</p>
+                    <p>Shipping is free for orders over AUD100.</p>
+                </div>
+            </div>
+        </div>
+        <div class="ingredients">
+            <div class="ingredients-header">
+                <h1>Ingredients</h1>
+            </div>
+            <div class="ingredient-details">
+                <div class="big-circle-container">
+                    <div class="big-circle1">
+                        <img src="assets/images/beef.png" alt="Beef">
+                    </div>
+                    <h2>Beef</h2>
+                    <p>A nutritious source of protein that contains all essential amino acids.</p>
+                </div>
+                <div class="big-circle-container">
+                    <div class="big-circle2">
+                        <img src="assets/images/chicken.png" alt="Chicken">
+                    </div>
+                    <h2>Chicken</h2>
+                    <p>Supports red blood cells and the assimilation of fats, carbs, and proteins.</p>
+                </div>
+                <div class="big-circle-container">
+                    <div class="big-circle3">
+                        <img src="assets/images/brown-rice.png" alt="Brown Rice">
+                    </div>
+                    <h2>Brown Rice</h2>
+                    <p>Contains vitamins that improve heart health and metabolism.</p>
+                </div>
+            </div>
+        </div>
+        <div id="reviews" class="reviews">
+            <div class="reviews-header">
+                <h1>Reviews</h1>
+                <hr class="hr-line-right">
+            </div>
+            <div class="reviews-list">
+                <div class="review">
+                    <h1>Will purchase again!</h1>
+                    <img src="assets/images/4-5-star-rating.png" alt="Rating">
+                    <p>Great product and my dog loves the taste! Really good for the price.</p>
+                    <div class="profile">
+                        <img src="assets/images/user.png" alt="Profile Picture">
+                        <h1>Elizabeth Bennet</h1>
+                    </div>
+                </div>
+                <div class="review">
+                    <h1>Fast Delivery</h1>
+                    <img src="assets/images/4-5-star-rating.png" alt="Rating">
+                    <p>Arrived earlier than I expected, thanks!</p>
+                    <div class="profile">
+                        <img src="assets/images/user.png" alt="Profile Picture">
+                        <h1>Bob Ross</h1>
+                    </div>
+                </div>
+                <div class="review">
+                    <h1>A bit pricey but good</h1>
+                    <img src="assets/images/4-5-star-rating.png" alt="Rating">
+                    <p>Higher end product but for a food reason, my dog loves this flavour.</p>
+                    <div class="profile">
+                        <img src="assets/images/user.png" alt="Profile Picture">
+                        <h1>Jeon Jungkook</h1>
+                    </div>
+                </div>
+                <div class="review">
+                    <h1>Perfect balance for dinner</h1>
+                    <img src="assets/images/4-5-star-rating.png" alt="Rating">
+                    <p>I have two active Border Collies who just love these pellets for meal times.</p>
+                    <div class="profile">
+                        <img src="assets/images/user.png" alt="Profile Picture">
+                        <h1>Bryan Dechart</h1>
+                    </div>
+                </div>
+                <div class="review">
+                    <h1>Dog absolutely loves this</h1>
+                    <img src="assets/images/4-5-star-rating.png" alt="Rating">
+                    <p>My dog uses everyday. I have not see any problems or side effects.</p>
+                    <div class="profile">
+                        <img src="assets/images/user.png" alt="Profile Picture">
+                        <h1>Hank Anderson</h1>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </main>
 
     <footer id="footer">
@@ -175,5 +298,7 @@
             </ul>
         </div>
     </footer>
-
+    
+    <script src="scripts.js"></script>   
 </body>
+</html>
