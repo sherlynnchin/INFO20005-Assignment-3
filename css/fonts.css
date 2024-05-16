@@ -172,3 +172,22 @@ p {
   font-size: 1.5em;
 }
 
+/*Product List*/
+.catergory.heading h2 {
+  font-weight: bold;
+  font-family: 'Yeseva One';
+}
+
+.filter.heading h2 {
+  font-weight: bold;
+  font-family: 'Yeseva One';
+}
+
+.filter-square button {
+  font-family: 'KoHo';
+}
+
+.dog-products-info {
+  font-family: 'KoHo';
+  letter-spacing: 0.02em;
+}

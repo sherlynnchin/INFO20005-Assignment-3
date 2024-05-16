@@ -212,4 +212,55 @@ footer {
   color: #303030;
 }
 
+/* Product List Page*/
+.catergory-heading h2 {
+  color: #303030;
+  margin-bottom: 10px;
+}
+
+.filter-heading h2 {
+  color: #303030;
+  margin-bottom: 10px;
+}
+.filter-square button {
+  background-color: #ADCB99;
+  color: #FFFFFF;
+}
+
+.category-selection li a {
+  color: #717171;
+}
+
+.category-selection li a.no-underline {
+  text-decoration: none;
+  color: #717171;
+}
+
+.category-selection li a:hover {
+  color: #303030; 
+}
+
+.filter-square {
+  background-color: #CEDEC3
+}
+
+.dog-product-list-header h1{
+  color: #303030
+}
+
+.dog-product-square {
+  background-color: #CEDEC3;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.dog-products-product-button {
+  background-color: rgba(206, 222, 195, 1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
+}
+.dog-products-info {
+  color: #717171;
+}
+.dog-products-product-price {
+  color: #444343;
+}
 
