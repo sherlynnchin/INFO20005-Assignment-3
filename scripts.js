@@ -6,6 +6,14 @@ function updatePrice(size) {
     }
 }
 
+function updatePrice2(size) {
+    if (size === "15") {
+        document.getElementById("priceDisplay").innerText = "$34.99";
+    } else if (size === "20") {
+        document.getElementById("priceDisplay").innerText = "$64.99";
+    }
+}
+
 function increaseCount(element) {
     var input = element.parentNode.querySelector('input');
     var value = parseInt(input.value, 10);
