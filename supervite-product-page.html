@@ -4,11 +4,11 @@
     <title>Stefmar</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type = "text/css" href="css/colours.css">
-    <link rel="stylesheet" type = "text/css" href="css/layout.css">
-    <link rel="stylesheet" type = "text/css" href="css/fonts.css">
-    <link rel="stylesheet" type = "text/css" href="css/nav.css">
-    <link rel="stylesheet" type = "text/css" href="css/footer.css">
+    <link rel="stylesheet" type = "text/css" href="../css/colours.css">
+    <link rel="stylesheet" type = "text/css" href="../css/layout.css">
+    <link rel="stylesheet" type = "text/css" href="../css/fonts.css">
+    <link rel="stylesheet" type = "text/css" href="../css/nav.css">
+    <link rel="stylesheet" type = "text/css" href="../css/footer.css">
 </head>
 
 <style>
@@ -68,45 +68,45 @@
             <div class="product-image">
                 <div class="product-image-list">
                     <div class="small-square">
-                        <img src="assets/images/coprice-details.jpg" alt="Coprice">
+                        <img src="assets/images/supervite-details.png" alt="Supervite">
                     </div>
                     <div class="small-square">
-                        <img src="assets/images/coprice-details2.jpg" alt="Coprice">
+                        <img src="assets/images/supervite-details2.png" alt="Supervite">
                     </div>
                     <div class="small-square">
-                        <img src="assets/images/coprice-details3.jpg" alt="Coprice">
+                        <img src="assets/images/supervite-details3.png" alt="Supervite">
                     </div>
                 </div>
                 <div class="main-product">
-                    <img src="assets/images/coprice.png" alt="Coprice Main Photo">
+                    <img src="assets/images/supervite.png" alt="Supervite Main Photo">
                 </div>
             </div>
 
             <div class="product-details">
                 <div class="product-header">
-                    <h1>Coprice Working Dog Beef</h1>
+                    <h1>Supervite Gold Adult Chicken Supercoat</h1>
                 </div>
                 <div class="product-rating">
                     <div class="stars">
                         <img src="assets/images/4-5-star-rating.png" alt="Star Rating">
                         <a href="#reviews" class="current-reviews">
-                            <p>(197 reviews)</p>
+                            <p>(89 reviews)</p>
                         </a>
                     </div>
                 </div>
                 <div class="product-detail-price">
-                    <h2 id="priceDisplay">$45.99</h2>
+                    <h2 id="priceDisplay">$34.99</h2>
                 </div>
                 <div class="product-detail-selection">
                     <div class="size-selection">
                         <h3>Size (kg)</h3>
                         <div class="circles">
                             <div class="size-circle-container">
-                                <input type="radio" name="size" value="10" onchange="updatePrice(this.value)" checked>
-                                <label for="size-10">10</label>
+                                <input type="radio" name="size" value="15" onchange="updatePrice2(this.value)" checked>
+                                <label for="size-15">15</label>
                             </div>
                             <div class="size-circle-container">
-                                <input type="radio" name="size" value="20" onchange="updatePrice(this.value)">
+                                <input type="radio" name="size" value="20" onchange="updatePrice2(this.value)">
                                 <label for="size-20">20</label>
                             </div>
                         </div>
@@ -134,18 +134,17 @@
             <div class="more-info-button">
                 <button id="toggleButton" onclick="toggleDescription('description')">Product Description<img src="assets/images/down-arrow.png" alt="Down Arrow"></button>
                 <div id="description" style="display: none;">
-                    <p>Working dogs are elite endurance athletes, high performance labourers and your best mates. 
-                        They keep you company during long, strenuous days and push themselves in through the toughest conditions, 
-                        so they deserve nothing but superior quality nutrition.</p>
-                    <p>CopRice Working Dog Adult Beef is specially developed nourishment for hard working adult dogs in need of diets 
-                        high in fat with balanced and highly digestible carbohydrate sources, to fuel the sustainable energy required 
-                        for gruelling workloads.</p>
+                    <p>Super Vite Gold Label with Real Australian Chicken, is a complete and balanced dry dog food. 
+                        This well crafted, gourmet recipe is infused with premium quality ingredients to give your dog the right 
+                        nutrition and delicious taste.</p>
                 </div>
             </div>
             <div class="more-info-button">
                 <button id="toggleButton" onclick="toggleDescription('recommendation')">Recommended For<img src="assets/images/down-arrow.png" alt="Down Arrow"></button>
                 <div id="recommendation" style="display: none;">
-                    <p>Recommended for dogs up to 7 years of age.</p>
+                    <p>Small 5 – 10kg: 110 – 190g per day or 1 – 1, 1/2 cups</p>
+                    <p>Medium 10 – 25kg: 190 – 360g per day or 1, 1/2 – 3 cups</p>
+                    <p>Large 25 – 45kg: 360 – 560g per day or 3 – 4, 3/4 cups</p>
                 </div>
             </div>
             <div class="more-info-button">
@@ -163,24 +162,24 @@
             <div class="ingredient-details">
                 <div class="big-circle-container">
                     <div class="big-circle1">
-                        <img src="assets/images/beef.png" alt="Beef">
-                    </div>
-                    <h2>Beef</h2>
-                    <p>A nutritious source of protein that contains all essential amino acids.</p>
-                </div>
-                <div class="big-circle-container">
-                    <div class="big-circle2">
                         <img src="assets/images/chicken.png" alt="Chicken">
                     </div>
                     <h2>Chicken</h2>
                     <p>Supports red blood cells and the assimilation of fats, carbs, and proteins.</p>
                 </div>
                 <div class="big-circle-container">
-                    <div class="big-circle3">
-                        <img src="assets/images/brown-rice.png" alt="Brown Rice">
+                    <div class="big-circle2">
+                        <img src="assets/images/wholegrain-barley.png" alt="Wholegrain Barley">
                     </div>
-                    <h2>Brown Rice</h2>
-                    <p>Contains vitamins that improve heart health and metabolism.</p>
+                    <h2>Wholegrain Barley</h2>
+                    <p>Stimulates intestinal motility, prevents constipation and promotes the growth of beneficial bacteria.</p>
+                </div>
+                <div class="big-circle-container">
+                    <div class="big-circle3">
+                        <img src="assets/images/corn.png" alt="Corn">
+                    </div>
+                    <h2>Corn</h2>
+                    <p>Provides easily digestible carbohydrates, which serves as a key energy source for your dog.</p>
                 </div>
             </div>
         </div>
