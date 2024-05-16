@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stefmar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type = "text/css" href="css/colours.css">
+    <link rel="stylesheet" type = "text/css" href="css/layout.css">
+    <link rel="stylesheet" type = "text/css" href="css/fonts.css">
+    <link rel="stylesheet" type = "text/css" href="css/nav.css">
+    <link rel="stylesheet" type = "text/css" href="css/footer.css">
+    <link rel="stylesheet" type = "text/css" href="css/shopping-cart.css">
+
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@600&family=Palanquin+Dark&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@600&family=Palanquin+Dark&family=Yeseva+One&display=swap');
+</style>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="Stefmar Logo">
+            </a>
+        </div>
+        <ul class="nav-bar">
+            <a href="index.html">Home</a>
+            <a href="#about-us">About Us</a>
+            <a href="product-list-page.html">Shop</a>
+            <a href="#">FAQ</a>
+            <a href="#footer">Contact Us</a>
+        </ul>
+        <div class="icons">
+            <div class="search-container">
+                <form class="search-box">
+                    <input type="search" class="search-input" placeholder="Search..."/>
+                </form>
+            </div>
+            <a href="shopping-cart.html" class="shopping-cart-button">
+                <img src="assets/images/bowl.png" alt="Shopping Cart Button">
+            </a>
+        </div>
+    </nav>
+    <div class="cart-bar">
+        <div class="backbutton">
+            <a href="#" onclick="goBack()">
+                <img src="assets/images/left-arrow.png" alt="Back Arrow">
+            </a>
+        </div>
+        <h1>Your Cart (2)</h1>
+    </div>
+    <div class="split left">
+        <div class="small-square">
+            <img src="assets/images/coprice-details.jpg" alt="Coprice">
+        </div>
+        <h2>Jane Flex</h2>
+        <p>Some text.</p>
+    </div>
+      
+    <div class="split right">
+        <div class="small-square">
+            <img src="assets/images/coprice-details.jpg" alt="Coprice">
+        </div>
+        <h2>John Doe</h2>
+        <p>Some text here too.</p>
+    </div>
+
+
+    </main>
+    <script src="./scripts.js"></script>
+</body>
+</html>

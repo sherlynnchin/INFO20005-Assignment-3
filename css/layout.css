@@ -373,7 +373,9 @@ body {
     border-radius: 10px;
 }
 
-.product-image img {
+
+.small-square img,
+.main-product img {
     max-width: 90%;
     max-height: 90%;
 }

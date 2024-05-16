@@ -54,3 +54,7 @@ function toggleDescription(descriptionId) {
         description.style.display = "none";
     }
 }
+
+function goBack() {
+    window.history.back();
+}
