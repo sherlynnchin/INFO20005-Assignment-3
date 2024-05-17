@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .button {
     text-align: center;
     text-decoration: none;
@@ -30,8 +34,8 @@
     margin-right: 10px;
 }
 
-/*main display*/
-body {
+body,
+.about-text h1 {
     margin: 0;
 }
 
@@ -68,122 +72,88 @@ body {
 }
 
 .overlay-text-header {
-    line-height: 20px;
+    line-height: 1.5em;
 }
 
-.overlay-text-header h1 {
-    margin-bottom: 0rem;
-}
-
-.overlay-text-header h2 {
-    margin-bottom: 3rem;
+.overlay-text-header h2,
+.info-item h2 {
+    margin-bottom: 1em;
 }
 
 .overlay-text-sub p {
-    line-height: 10px;
-    margin-bottom: 0;
+    line-height: 0.5em;
 }
 
 .shop-now {
-    margin-top: 30px;
-    padding: 15px 60px;
+    margin-top: 2em;
+    padding: 1em 4em;
     border-radius: 10px;
     border: none;
 }
 
 /*categories section*/
 .categories {
-    margin-top: 30px;
+    margin-top: 2em;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0.5rem;
 }
 
 .category-buttons {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     width: 70%;
 }
 
 .button-container {
     text-align: center;
+    margin-top: 2em;
 }
 
-.button-dogs{
-    margin-top: 25px;
-    padding: 30px 60px;
-    border-radius: 10px;
-    border: none;
-}
-
-.button-cats{
-    margin-top: 25px;
-    padding: 30px 60px;
-    border-radius: 10px;
-    border: none;
-}
-
-.button-fish{
-    margin-top: 25px;
-    padding: 30px 60px;
-    border-radius: 10px;
-    border: none;
-}
-
-.button-others{
-    margin-top: 25px;
-    padding: 30px 60px;
+.button-dogs,
+.button-cats,
+.button-fish,
+.button-others {
+    padding: 2em 4em;
     border-radius: 10px;
     border: none;
 }
 
 .category-buttons img {
-    width: 47px;
-    height: 47px;
+    width: 3em;
+    height: 3em;
 }
 
 .button-label {
     display: block;
-    margin-top: 15px;
+    margin-top: 1em;
 }
 
 /*about us section*/
 .about-us {
+    width: 100%;
     display: flex;
     align-items: center;
-    text-align: center;
-    padding: 20px;
-}
-
-.about-us-photo {
-    flex: 1;
-    margin-right: 20px;
+    padding: 2em;
 }
 
 .about-us-photo img {
-    width: 650px;
-    height: 600px;
-    margin-left: 30px;
+    width: 100%;
+    height: auto;
+    margin-left: 2em;
 }
 
 .about-us-content {
-    flex: 2;
-}
-
-.about-us-header {
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    padding: 3em;
+    max-width: 55%;
 }
 
 .about-text {
     position: relative;
     display: inline-block;
-}
-
-.about-text h1 {
-    margin-bottom: 0;
-    margin-right: 20%;
 }
 
 .hr-lines:before {
@@ -195,7 +165,7 @@ body {
     top: 50%;
     left: -30%;
     background: #A9A9A9;
-  }
+}
 
 .hr-lines{
     position: relative;
@@ -203,45 +173,37 @@ body {
     margin-top: 0;
     left: 30%;
     margin-bottom: 40px;
-  }
-
-.about-us-desc p {
-    margin-right: 29%;
-    margin-left: 10%;
-    text-align: right;
 }
+
 
 .info-section {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    gap: 1em;
 }
 
 .info-item {
     width: 50%;
-    padding: 20px;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     box-sizing: border-box;
     text-align: center;
+    margin-bottom: 2em;
 }
 
 .info-item img {
-    max-width: 40px;
+    max-width: 3em;
     height: auto;
-    margin-bottom: 10px;
-}
-
-.info-item h2 {
-    margin-bottom: 10px;
+    margin-bottom: 1em;
 }
 
 .info-item p {
-    margin-left: 50px;
-    margin-bottom: 10px;
-    margin-right: 50px;
+    max-width: 90%;
 }
 
 .best-sellers-header {
-    margin-top: 4%;
     display: flex;
     align-items: center;
 }
@@ -250,7 +212,6 @@ body {
     order: 1;
     flex: 1;
     margin-left: 6%;
-
 }
 
 .hr-line-right {
@@ -390,10 +351,11 @@ body {
 }
 
 .product-details {
-    margin-left: 4em;
+    margin-left: 2em;
     margin-top: 4%;
     display: flex;
     flex-direction: column;
+    width: 50%;
 }
 
 .product-rating {
