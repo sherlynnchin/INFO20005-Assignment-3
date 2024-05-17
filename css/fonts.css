@@ -16,31 +16,25 @@
   font-style: normal;
 }
 
-body {
-    font-family: 'Yeseva One';
-  }
-  
-h1 {
+body, h1, .catergory.heading h2, .filter.heading h2 {
     font-family: 'Yeseva One';
   }
 
-h2 {
+h2,
+.nav-bar > a {
     font-family: 'Palanquin Dark';
   }
   
-p {
+p, .product-detail-selection, .filter-square button, .cart-item-info, .cart-item-info h2 {
     font-family: 'KoHo';
   }
 
-.nav-bar > a{
-  font-family: 'Palanquin Dark';
-  }
 
 .overlay-text-header h1 {
   font-family: 'Palanquin Dark';
   font-size: 3em;
   letter-spacing: 0.4em;
-  }
+}
 
 .overlay-text-header h2 {
   letter-spacing: 0.3em;
@@ -52,7 +46,8 @@ p {
   font-size: 1.2em;
 }
 
-.shop-now {
+.shop-now, .info-item p, .posttext, .more-info-button button,
+.big-circle-container p {
   font-family: 'KoHo';
   font-size: 1em;
 }
@@ -87,10 +82,6 @@ p {
   font-size: 1.4em;
 }
 
-.info-item p {
-  font-size: 1em;
-}
-
 .footer-nav a {
   font-family: 'Yeseva One';
   font-size: 2em;
@@ -106,45 +97,25 @@ p {
   letter-spacing: 0.04em;
 }
 
-.product-info {
+.product-info, .dog-products-info {
   font-family: 'KoHo';
   letter-spacing: 0.02em;
 }
 
-.product-details h1{
+.product-details h1,
+.product-detail-price h2 {
   font-family: 'KoHo';
   font-size: 2em;
 }
 
-.product-detail-price h2 {
-  font-family: 'KoHo';
-  font-family: 2em;
-}
-
-.product-detail-selection {
-  font-family: 'KoHo';
-}
-
 .counter input {
   font-family: 'KoHo';
-  line-height: 1.5em;
   font-size: 1.3em;
-  text-align: center;
 }
 
-.pretext {
+.pretext, .big-circle-container h2, .review h1 {
   font-family: 'KoHo';
   font-size: 1.5em;
-}
-
-.posttext {
-  font-family: 'KoHo';
-  font-size: 1em;
-}
-
-.more-info-button button {
-  font-family: 'KoHo';
-  font-size: 1em;
 }
 
 .ingredients-header {
@@ -152,42 +123,6 @@ p {
   letter-spacing: 0.05em;
 }
 
-.big-circle-container h2{
-  font-family: 'KoHo';
-  font-size: 1.5em;
-}
-
-.big-circle-container p {
-  font-family: 'KoHo';
-  font-size: 1em;
-  text-align: center;
-}
-
 .reviews-header h1 {
   font-weight: 200;
-}
-
-.review h1 {
-  font-family: 'KoHo';
-  font-size: 1.5em;
-}
-
-/*Product List*/
-.catergory.heading h2 {
-  font-weight: bold;
-  font-family: 'Yeseva One';
-}
-
-.filter.heading h2 {
-  font-weight: bold;
-  font-family: 'Yeseva One';
-}
-
-.filter-square button {
-  font-family: 'KoHo';
-}
-
-.dog-products-info {
-  font-family: 'KoHo';
-  letter-spacing: 0.02em;
 }
