@@ -67,7 +67,12 @@
   flex-direction: column;
   align-items: center;
   overflow-x: auto;
-  text-align: center;
+}
+
+.suggestion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .suggestion-list {
