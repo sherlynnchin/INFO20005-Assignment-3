@@ -1,44 +1,65 @@
-<div class="product-details">
-    <div class="product-header">
-        <h1>Coprice Working Dog Beef 20kg</h1>
-    </div>
-    <div class="product-rating">
-        <div class="stars">
-            <img src="assets/images/4-5-star-rating.png" alt="Star Rating">
-            <a href="#" class="reviews">
-                <p>(197 reviews)</p>
-            </a>
+<div class="split left">
+    <div class="cart-item">
+        <div class="small-square">
+            <img src="assets/images/coprice-details.jpg" alt="Coprice">
         </div>
+        <h2>Coprice Dog Food</h2>
     </div>
-    <div class="product-detail-price">
-        <h2 id="priceDisplay">$75.99</h2>
+    <div class="cart-item">
+        <div class="small-square">
+            <img src="assets/images/coprice-details.jpg" alt="Coprice">
+        </div>
+        <h2>Coprice Dog Food</h2>
     </div>
-    <div class="product-detail-selection">
-        <div class="size-selection">
-            <h3>Size (kg)</h3>
-            <div class="circles">
-                <div class="size-circle-container">
-                    <input type="radio" name="size" value="10" onchange="updatePrice(this.value)" checked>
-                    <label for="size-10">10</label>
-                </div>
-                <div class="size-circle-container">
-                    <input type="radio" name="size" value="20" onchange="updatePrice(this.value)">
-                    <label for="size-20">20</label>
-                </div>
-            </div>
+    <div class="cart-item">
+        <div class="small-square">
+            <img src="assets/images/coprice-details.jpg" alt="Coprice">
+        </div>
+        <h2>Coprice Dog Food</h2>
+    </div>
+</div>
+  
+<div class="split right">
+    <div class="centered">
+        <div class="order-summary">
+            <h1>Order Summary</h1>
         </div>
     </div>
 </div>
-</div>
 
 
 
-<script>
-function updatePrice(size) {
-    if (size === "10") {
-        document.getElementById("priceDisplay").innerText = "$45.99";
-    } else if (size === "20") {
-        document.getElementById("priceDisplay").innerText = "$75.99";
+.split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    justify-content: center;
+  }
+  
+  /* Control the left side */
+  .left {
+    left: 0;
+    margin-left: 3em;
+    overflow-y: auto;
+    padding-right: 1em;
+  }
+  
+  /* Control the right side */
+  .right {
+    right: 0;
     }
+
+  .centered {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  padding: 1em;
 }
-</script>

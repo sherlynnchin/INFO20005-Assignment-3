@@ -2,13 +2,71 @@ body {
     background-color: #F7F8EA;
   }
   
-h1 {
+h1,
+.about-text h2 {
     color: #8C602D;
   }
   
-p {
+p,
+.category-heading h1,
+.about-text h1,
+.info-item,
+.best-sellers-header h1,
+.product-details h1,
+.counter span,
+.ingredients-header h1,
+.reviews-header h1,
+.review h1,
+.profile h1 {
     color: #303030;
-  }
+}
+
+.overlay-text h1,
+.overlay-text h2,
+.overlay-text p {
+    color: white;
+}
+
+.product-info {
+  color: #717171;
+}
+
+.product-price {
+  color: #444343;
+}
+
+.footer-contact h1,
+.footer-socials h1 {
+  color: white;
+}
+
+footer {
+  background-color: #858F7E;
+  color: white;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.addtocart,
+.fa-cart-plus {
+  background:#C3D9DE;
+}
+
+.pretext{
+  color:#454545;
+  background:#C3D9DE;
+}
+
+.posttext,
+.fa-check,
+.done {
+  background:#FFB9D2;
+}
+
+
 
 nav {
   background-color: #e6dbc9;
@@ -20,26 +78,10 @@ nav {
   text-decoration: none;
   }
 
-.overlay-text h1 {
-  color: white;
-}
-
-.overlay-text h2 {
-    color: white;
-}
-
-.overlay-text p {
-    color: white;
-}
-
 .shop-now {
   background-color: #C8A36F;
   color: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
-}
-
-.category-heading h1 {
-  color: #303030;
 }
 
 .button-dogs {
@@ -62,57 +104,11 @@ nav {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
 }
 
-.about-text h1 {
-  color: #303030;
-}
-
-.about-text h2 {
-  color: #8C602D;
-}
-
-.info-item {
-  color: #303030;
-}
-
-.best-sellers-header h1 {
-  color: #303030;
-}
-
 .product-button {
   background-color: rgba(206, 222, 195, 1);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
 }
 
-.product-info {
-  color: #717171;
-}
-
-.product-price {
-  color: #444343;
-}
-
-
-/* footer */
-footer {
-  background-color: #858F7E;
-  color: white;
-}
-
-.footer-nav a {
-  text-decoration: none;
-  color: white;
-}
-
-.footer-contact h1 {
-  color: white;
-}
-
-.footer-socials h1 {
-  color: white;
-}
-
-
-/* product page */
 .small-square {
   background-color: #ADCB99;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
@@ -121,10 +117,6 @@ footer {
 .main-product {
   background-color: #CEDEC3;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
-}
-
-.product-details h1 {
-  color: #303030;
 }
 
 .size-circle-container {
@@ -140,35 +132,6 @@ footer {
   color: #303030;
   background: white;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.counter span {
-  color: #303030;
-}
-
-.addtocart{
-  background:#C3D9DE;
-}
-
-.pretext{
-  color:#454545;
-  background:#C3D9DE;
-}
-
-.fa-cart-plus{
-  background:#C3D9DE;
-}
-
-.posttext{
-  background:#FFB9D2;
-}
-
-.fa-check{
-  background:#FFB9D2;
-}
-
-.done {
-  background:#FFB9D2;
 }
 
 .more-info-button button {
@@ -191,25 +154,9 @@ footer {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.ingredients-header h1{
-  color: #303030;
-}
-
 .review {
   background-color: #cedec3a3;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.reviews-header h1 {
-  color: #303030;
-}
-
-.review h1 {
-  color: #303030;
-}
-
-.profile h1 {
-  color: #303030;
 }
 
 /* Product List Page*/
