@@ -167,13 +167,39 @@ nav {
   margin-bottom: 10px;
 }
 
-.filter-heading h2 {
-  color: #303030;
-  margin-bottom: 10px;
+.filter-sub-heading li a.no-underline {
+  text-decoration: none;
 }
-.filter-square button {
+
+.type-button {
   background-color: #ADCB99;
   color: #FFFFFF;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.type-button:hover {
+  background-color: #A0B790;
+  color: #FFFFFF;
+}
+
+.size-button {
+  background-color: #858F7E;
+  color: #FFFFFF;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.size-button:hover {
+  background-color: #6A7264;
+  color: #FFFFFF;
+}
+
+.confirm-button {
+  background-color: #FFC2D7;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.brand-select {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .category-selection li a {
@@ -190,7 +216,7 @@ nav {
 }
 
 .filter-square {
-  background-color: #CEDEC3
+  background-color: #EBF0DF
 }
 
 .dog-product-list-header h1{

@@ -25,7 +25,9 @@ h2,
     font-family: 'Palanquin Dark';
   }
   
-p, .product-detail-selection, .filter-square button, .cart-item-info, .cart-item-info h2 {
+p, .product-detail-selection,.filter-sub-heading ,.type-button,
+ .size-button, .brand-select, .confirm-button, .cart-item-info,
+  .cart-item-info h2 {
     font-family: 'KoHo';
   }
 
@@ -125,4 +127,8 @@ p, .product-detail-selection, .filter-square button, .cart-item-info, .cart-item
 
 .reviews-header h1 {
   font-weight: 200;
+}
+
+.filter-sub-heading {
+  text-decoration: underline
 }
