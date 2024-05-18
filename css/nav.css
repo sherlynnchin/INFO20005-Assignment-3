@@ -127,7 +127,7 @@ main {
 }
 
 /* Responsive design */
-@media (max-width: 390px) {
+@media (max-width: 391px) {
     .nav-bar, .icons {
         display: none;
     }

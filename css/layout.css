@@ -92,6 +92,18 @@ body,
     border: none;
 }
 
+@media (max-width: 391px) {
+    .overlay-image {
+        height: 40vh;
+    }
+    .shop-now {
+        margin-top: 1em;
+        padding: 1em 3em;
+        border-radius: 10px;
+        border: none;
+    }
+}
+
 /*categories section*/
 .categories {
     margin-top: 2em;
@@ -128,6 +140,31 @@ body,
 .button-label {
     display: block;
     margin-top: 1em;
+}
+
+@media (max-width: 391px) {
+    .category-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5em;
+    }
+    .button-container {
+        text-align: center;
+        margin-top: 1em;
+    }
+    .button-dogs,
+    .button-cats,
+    .button-fish,
+    .button-others {
+        padding: 1em 1em;
+        border-radius: 50%;
+        border: none;
+    }
+    .category-buttons img {
+        width: 2em;
+        height: 2em;
+    }
 }
 
 /*about us section*/
@@ -176,7 +213,6 @@ body,
     margin-bottom: 40px;
 }
 
-
 .info-section {
     display: flex;
     justify-content: space-between;
@@ -202,6 +238,38 @@ body,
 
 .info-item p {
     max-width: 90%;
+}
+
+@media (max-width: 391px) {
+    .about-us {
+        display: flex;
+        flex-direction: row;
+    }
+    .about-us-content {
+        display: none;
+    }
+    .about-us-photo img {
+        content: url('../assets/images/mobile-about-us.png');
+        width: 50%;
+        height: auto;
+    }
+    .info-section {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+    }
+    .info-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .info-item img {
+        max-width: 2em;
+        height: auto;
+        margin-bottom: 1em;
+    }
 }
 
 .best-sellers-header {

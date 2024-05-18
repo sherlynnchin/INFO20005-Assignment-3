@@ -16,7 +16,7 @@
   font-style: normal;
 }
 
-body, h1, .catergory.heading h2, .filter.heading h2 {
+body, h1, .filter.heading h2 {
     font-family: 'Yeseva One';
   }
 
@@ -131,4 +131,26 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
 
 .filter-sub-heading {
   text-decoration: underline
+}
+
+@media (max-width: 391px) {
+  .overlay-text-header h1 {
+    font-size: 3em;
+    letter-spacing: 0.2em;
+  }
+  .overlay-text-sub p {
+    font-size: 1em;
+  }
+
+  .category-heading h1 {
+    letter-spacing: 0.02em;
+    font-size: 1.6em;
+  }
+
+  .info-item h2 {
+    font-size: 1em;
+  }
+  .info-item p {
+    font-size: 0.8em;
+  }
 }
