@@ -48,8 +48,8 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
   font-size: 1.2em;
 }
 
-.shop-now, .info-item p, .posttext, .more-info-button button,
-.big-circle-container p {
+.shop-now, .info-item1 p, .info-item2 p, .info-item3 p, 
+.posttext, .more-info-button button, .big-circle-container p {
   font-family: 'KoHo';
   font-size: 1em;
 }
@@ -79,7 +79,7 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
   font-size: 1.1em;
 }
 
-.info-item h2 {
+.info-item1 h2, .info-item2 h2, .info-item3 h2 {
   font-family: 'Yeseva One';
   font-size: 1.4em;
 }
@@ -147,10 +147,10 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
     font-size: 1.6em;
   }
 
-  .info-item h2 {
+  .info-item1 h2, .info-item2 h2, .info-item3 h2 {
     font-size: 1em;
   }
-  .info-item p {
+  .info-item1 p, .info-item2 p, .info-item3 p {
     font-size: 0.8em;
   }
 }

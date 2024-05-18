@@ -219,7 +219,7 @@ body,
     gap: 1em;
 }
 
-.info-item {
+.info-item1, .info-item2, .info-item3 {
     width: 50%;
     padding: 2em;
     display: flex;
@@ -230,45 +230,70 @@ body,
     margin-bottom: 2em;
 }
 
-.info-item img {
+.info-item1 img, .info-item2 img, .info-item3 img {
     max-width: 3em;
     height: auto;
     margin-bottom: 1em;
 }
 
-.info-item p {
+.info-item1 p, .info-item2 p, .info-item3 p {
     max-width: 90%;
 }
 
 @media (max-width: 391px) {
-    .about-us {
-        display: flex;
-        flex-direction: row;
-    }
     .about-us-content {
         display: none;
     }
+    .about-container {
+        display: flex;
+        margin-left: 0;
+    }
+    #about-us {
+        margin: 0;
+        padding: 0;
+    }
+    .about-us-photo {
+        z-index: 100;
+        justify-self: flex-start;
+        align-self: center;
+    }
     .about-us-photo img {
         content: url('../assets/images/mobile-about-us.png');
-        width: 50%;
+        width: 100%;
         height: auto;
+        float: left;
+        padding: 0;
+        margin: 0;
     }
     .info-section {
+        width: 70%;
         display: flex;
         flex-direction: column;
-        gap: 1em;
+        align-items: center;
+        text-wrap: wrap;
+        padding: 0.5em;
+        margin-bottom: 0.5em;
     }
-    .info-item {
+    .info-item1, .info-item2, .info-item3 {
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
         box-sizing: border-box;
         text-align: center;
+        padding: 0;
+        margin-bottom: 0.1em;
     }
-    .info-item img {
+    .info-item1 h2, .info-item2 h2, .info-item3 h2 {
+        margin-bottom: 0.2em;
+    }
+    .info-item1 p, .info-item2 p, .info-item3 p {
+        margin-bottom: 0.5em;
+    }
+    .info-item1 img, .info-item2 img, .info-item3 img {
         max-width: 2em;
         height: auto;
-        margin-bottom: 1em;
+        margin-bottom: 0.2em;
     }
 }
 
