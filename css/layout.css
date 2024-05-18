@@ -282,6 +282,7 @@ body,
         box-sizing: border-box;
         text-align: center;
         padding: 0;
+        margin-right: 30%;
         margin-bottom: 0.1em;
     }
     .info-item1 h2, .info-item2 h2, .info-item3 h2 {
@@ -372,6 +373,15 @@ body,
 .product-price {
     display: flex;
     align-items: flex-end;
+}
+
+@media (max-width: 391px) {
+    .hr-line-right {
+        width: 30%;
+    }
+    .best-seller-product-list {
+        margin-top: 0.5em;
+    }
 }
 
 /* product page */

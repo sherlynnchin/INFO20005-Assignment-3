@@ -1,5 +1,5 @@
 /* footer */
-footer {
+.footer-desktop {
     margin-top: 4%;
     display: flex;
     justify-content: space-between;
@@ -59,4 +59,17 @@ footer {
 .socials-details img {
     width: 2.5em;
     height: 2.5em;
+}
+
+.footer-mobile {
+    display: none;
+}
+
+@media (max-width: 391px) {
+    .footer-desktop {
+        display: none;
+    }
+    .footer-mobile {
+        display: block;
+    }
 }
