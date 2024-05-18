@@ -1,3 +1,12 @@
+document.querySelector('.menu-button').addEventListener('click', function() {
+    const sidebar = document.getElementById('sidebar');
+    if (sidebar.style.left === '-250px') {
+        sidebar.style.left = '0';
+    } else {
+        sidebar.style.left = '-250px';
+    }
+});
+
 function updatePrice(size) {
     if (size === "10") {
         document.getElementById("priceDisplay").innerText = "$45.99";

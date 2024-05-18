@@ -68,14 +68,17 @@ footer {
   background:#FFB9D2;
 }
 
-
-
-nav {
+nav, .sidebar {
   background-color: #e6dbc9;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
 }
 
-.nav-bar > a{
+.sidebar {
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.nav-bar > a,
+.sidebar > a{
   color: #8C602D;
   text-decoration: none;
   }
