@@ -1,0 +1,163 @@
+<footer id="footer" class="footer-mobile">
+    <div class="mobile-footer-header">
+        <h1>Contact Us</h1>
+    </div>
+    <div class="mobile-footer-content">
+        <div class="footer-info">
+            <div class="circle-container">
+                <div class="circle">
+                    <img src="assets/images/location.png" alt="Location Pin">
+                </div>
+                <p>517-519 Bunnerong Rd, Matraville</p>
+            </div>
+        </div>
+        <div class="footer-info">
+            <div class="circle-container">
+                <div class="circle">
+                    <img src="assets/images/smartphone.png" alt="Smartphone">
+                </div>
+                <div class="social-media">
+                    <div class="circle">
+                        <img src="assets/images/instagram.png" alt="Instagram logo">
+                    </div>
+                    <div class="circle">
+                        <img src="assets/images/facebook.png" alt="Facebook logo">
+                    </div>
+                    <div class="circle">
+                        <img src="assets/images/twitter.png" alt="Twitter logo">
+                    </div>
+                </div>
+                <p>+61 1300 139 756</p>
+            </div>
+        </div>
+        <div class="footer-info">
+            <div class="circle-container">
+                <div class="circle">
+                    <img src="assets/images/email.png" alt="Email">
+                </div>
+                <p>sales@stefmar-
+                    petcare.com.au</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+/* footer */
+.footer-desktop {
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-top-left-radius: 5em;
+    border-top-right-radius: 5em;
+}
+
+.footer-nav {
+    order: 1;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 3%;
+    margin-left: 1.5%;
+}
+
+.footer-nav a {
+    padding: 0.7rem 1.9rem;
+}
+
+.footer-nav img {
+    width: 17em;
+    height: 10em;
+}
+
+.footer-contact {
+    order: 2;
+    flex: 1;
+    margin-top: 3%;
+    
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: -10%;
+}
+
+.contact-details img {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.footer-socials {
+    order: 3;
+    flex: 1;
+    margin-top: 3%;
+}
+
+.socials-details {
+    display: flex;
+    flex-direction: column;
+    margin-left: -10%;
+}
+
+.socials-details img {
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.footer-mobile {
+    display: none;
+}
+
+@media (max-width: 391px) {
+    .footer-desktop {
+        display: none;
+    }
+    .footer-mobile {
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .mobile-footer-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-info {
+        max-width: 30%;
+    }
+    .circle-container {
+        text-wrap: wrap;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1%;
+    }
+    .social-media {
+        display: flex;
+        margin-top: 1em;
+    }
+    .circle {
+        width: 2em;
+        height: 2em; 
+        background-color: #F6FEF2;
+        border-radius: 50%; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .circle img {
+        width: 1em;
+        height: auto;
+    }
+    .footer-info p {
+        word-wrap: break-word;
+        white-space: normal; /* Ensures text wraps */
+        margin: 0.5em 0; /* Added margin for better spacing */
+    }
+}

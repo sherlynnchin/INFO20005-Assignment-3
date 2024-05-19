@@ -26,7 +26,8 @@ p,
 
 .overlay-text h1,
 .overlay-text h2,
-.overlay-text p {
+.overlay-text p,
+.mobile-footer-header h1{
     color: white;
 }
 
@@ -39,7 +40,8 @@ p,
 }
 
 .footer-contact h1,
-.footer-socials h1 {
+.footer-socials h1,
+.footer-info p {
   color: white;
 }
 

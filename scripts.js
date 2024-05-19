@@ -1,3 +1,4 @@
+/* sidebar script */
 document.querySelector('.menu-button').addEventListener('click', function() {
     const sidebar = document.getElementById('sidebar');
     if (sidebar.style.left === '-250px') {
@@ -7,6 +8,23 @@ document.querySelector('.menu-button').addEventListener('click', function() {
     }
 });
 
+function closeSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    sidebar.style.left = '-250px';
+}
+
+document.addEventListener('click', function(event) {
+    const sidebar = document.getElementById('sidebar');
+    if (!sidebar.contains(event.target) && !event.target.closest('.menu-button')) {
+        closeSidebar();
+    }
+});
+
+document.querySelectorAll('.sidebar a').forEach(link => {
+    link.addEventListener('click', closeSidebar);
+});
+
+/* product page script */
 function updatePrice(size) {
     if (size === "10") {
         document.getElementById("priceDisplay").innerText = "$45.99";

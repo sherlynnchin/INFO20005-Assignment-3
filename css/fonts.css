@@ -133,6 +133,11 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
   text-decoration: underline
 }
 
+.mobile-footer-header h1,
+.footer-info p {
+  font-weight: 100;
+}
+
 @media (max-width: 391px) {
   .overlay-text-header h1 {
     font-size: 3em;
@@ -153,6 +158,4 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
   .info-item1 p, .info-item2 p, .info-item3 p {
     font-size: 0.8em;
   }
-
-
 }
