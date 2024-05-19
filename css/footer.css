@@ -125,7 +125,7 @@
     }
     .footer-info p {
         word-wrap: break-word;
-        white-space: normal; /* Ensures text wraps */
-        margin: 0.5em 0; /* Added margin for better spacing */
+        white-space: normal; 
+        margin: 0.5em 0; 
     }
 }

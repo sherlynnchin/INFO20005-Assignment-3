@@ -67,7 +67,8 @@ footer {
 
 .posttext,
 .fa-check,
-.done {
+.done,
+.checkout-button {
   background:#FFB9D2;
 }
 

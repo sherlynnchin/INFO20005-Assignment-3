@@ -49,7 +49,8 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
 }
 
 .shop-now, .info-item1 p, .info-item2 p, .info-item3 p, 
-.posttext, .more-info-button button, .big-circle-container p {
+.posttext, .more-info-button button, .big-circle-container p,
+.delivery-method-button label {
   font-family: 'KoHo';
   font-size: 1em;
 }
@@ -105,12 +106,13 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
 }
 
 .product-details h1,
-.product-detail-price h2 {
+.product-detail-price h2,
+.subtotal h1, .suggestion h1 {
   font-family: 'KoHo';
   font-size: 2em;
 }
 
-.counter input {
+.counter input, .quantity h3 {
   font-family: 'KoHo';
   font-size: 1.3em;
 }
@@ -138,6 +140,12 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
   font-weight: 100;
 }
 
+.price-line p, .price-line h2, .delivery-method h2,
+.checkout-text {
+  font-family: 'KoHo';
+  font-size: 1.5em;
+}
+
 @media (max-width: 391px) {
   .overlay-text-header h1 {
     font-size: 3em;
@@ -155,7 +163,7 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
   .info-item1 h2, .info-item2 h2, .info-item3 h2 {
     font-size: 1em;
   }
-  .info-item1 p, .info-item2 p, .info-item3 p {
+  .footer-info p {
     font-size: 0.8em;
   }
 }

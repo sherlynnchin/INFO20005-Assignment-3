@@ -298,6 +298,9 @@ body,
     }
 }
 
+.best-sellers {
+    max-width: 100%;
+}
 .best-sellers-header {
     display: flex;
     align-items: center;
@@ -436,6 +439,7 @@ body,
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    flex-shrink: 0;
 }
 
 .small-square img,
@@ -719,6 +723,39 @@ body,
     max-width: 10%;
     max-height: 10%;
 }
+
+.product-image-mobile{
+    display: none;
+}
+
+@media (max-width: 391px) {
+    .product-image {
+        display: none;
+    }
+    .product-image-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+    .main-product {
+        width: 12em;
+        height: 12em;
+    }
+    .product-image-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    .small-square {
+        width: 4em;
+        height: 4em;
+    }
+}
+
 
 /* Product List Page*/
 .dog-product-list-header {

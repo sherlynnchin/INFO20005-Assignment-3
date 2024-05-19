@@ -32,7 +32,7 @@
             </div>
             <ul class="nav-bar">
                 <a href="index.html">Home</a>
-                <a href="#about-us">About Us</a>
+                <a href="index.html#about-us">About Us</a>
                 <a href="product-list-page.html">Shop</a>
                 <a href="#">FAQ</a>
                 <a href="#footer">Contact Us</a>
@@ -55,7 +55,7 @@
                 </a>
             </div>
             <a href="index.html">Home</a>
-            <a href="#about-us">About Us</a>
+            <a href="index.html#about-us">About Us</a>
             <a href="product-list-page.html">Shop</a>
             <a href="#">FAQ</a>
             <a href="#footer">Contact Us</a>
@@ -94,6 +94,14 @@
                     <h3>20kg</h3>
                     <p>$75.99</p>
                 </div>
+                <div class="quantity">
+                    <h3>Quantity</h3>
+                    <div class="counter">
+                        <span class="down" onClick="decreaseCount(this)">-</span>
+                        <input type="text" value="1">
+                        <span class="up" onClick='increaseCount(this)'>+</span>
+                    </div>
+                </div>
             </div>
             <div class="cart-item">
                 <div class="small-square">
@@ -104,16 +112,56 @@
                     <h3>15kg</h3>
                     <p>$34.99</p>
                 </div>
+                <div class="quantity">
+                    <h3>Quantity</h3>
+                    <div class="counter">
+                        <span class="down" onClick="decreaseCount(this)">-</span>
+                        <input type="text" value="1">
+                        <span class="up" onClick='increaseCount(this)'>+</span>
+                    </div>
+                </div>
             </div>
         </div>
         
         <div class="order-summary">
             <div class="subtotal">
-                <h1>Subtotal</h1>
+                <h1>Total Summary</h1>
+                <div class="price-summary">
+                    <div class="price-line">
+                        <h2>Subtotal:</h2>
+                        <p>$110.98</p>
+                    </div>
+                    <div class="price-line">
+                        <h2>Shipping:</h2>
+                        <p>Calculated at checkout</p>
+                    </div>
+                    <div class="delivery-method">
+                        <h2>Delivery Method</h2>
+                        <div class="delivery-method-button">
+                            <ul>
+                                <li>
+                                    <input type="radio" id="f-option" name="selector">
+                                    <label for="f-option">Deliver</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="s-option" name="selector">
+                                    <label for="s-option">Pick Up</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <a href="index.html">
+                            <button class="checkout-button">
+                                <div class="checkout-text">Checkout</div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
             </div>
             
-            
             <div class="suggestion">
+                <hr class="separator">
                 <h1>You May Also Like:</h1>
                 <div class="suggestion-list">
                     <div class="best-seller-product">
