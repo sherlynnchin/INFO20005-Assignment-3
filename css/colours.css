@@ -230,9 +230,20 @@ nav, .sidebar {
   color: #303030
 }
 
-.dog-product-square {
+.dog-product-square, .payment-method button {
   background-color: #CEDEC3;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.payment-method button:active {
+  background-color: #89a278;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.payment-method button:hover {
+  background-color: #A4BF91;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: 0.7s;  
 }
 
 .dog-products-product-button {
@@ -246,3 +257,28 @@ nav, .sidebar {
   color: #444343;
 }
 
+.circle {
+  background-color: #F6FEF2;
+}
+
+.circle-normal {
+  background-color: #CEDEC3;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border: 2px solid #A4BF91; 
+}
+
+.circle-darkened {
+  background-color: #A4BF91;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border: 2px solid #CEDEC3; 
+}
+
+.circle-darkened p, .circle-brown-darkened p {
+  color: white;
+}
+
+.circle-brown-darkened {
+  background-color: #C8A36F;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border: 2px solid #EFE4D3; 
+}

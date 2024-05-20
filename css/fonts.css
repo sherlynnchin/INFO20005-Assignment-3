@@ -50,7 +50,7 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
 
 .shop-now, .info-item1 p, .info-item2 p, .info-item3 p, 
 .posttext, .more-info-button button, .big-circle-container p,
-.delivery-method-button label {
+.delivery-method-button label, .address-button label {
   font-family: 'KoHo';
   font-size: 1em;
 }
@@ -107,7 +107,8 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
 
 .product-details h1,
 .product-detail-price h2,
-.subtotal h1, .suggestion h1 {
+.subtotal h1, .suggestion h1,
+.checkout-header h2 {
   font-family: 'KoHo';
   font-size: 2em;
 }
@@ -117,7 +118,9 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
   font-size: 1.3em;
 }
 
-.pretext, .big-circle-container h2, .review h1 {
+.pretext, .big-circle-container h2, .review h1,
+.progress-bar p, .checkout-part h2, .circle-brown-darkened p,
+.payment-method p {
   font-family: 'KoHo';
   font-size: 1.5em;
 }

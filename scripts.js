@@ -85,3 +85,13 @@ function toggleDescription(descriptionId) {
 function goBack() {
     window.history.back();
 }
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    const buttons = document.querySelectorAll('.payment-button');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            button.classList.toggle('clicked');
+        });
+    });
+});

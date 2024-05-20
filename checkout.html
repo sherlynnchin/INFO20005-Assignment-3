@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stefmar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type = "text/css" href="../css/colours.css">
+    <link rel="stylesheet" type = "text/css" href="../css/layout.css">
+    <link rel="stylesheet" type = "text/css" href="../css/fonts.css">
+    <link rel="stylesheet" type = "text/css" href="../css/nav.css">
+    <link rel="stylesheet" type = "text/css" href="../css/footer.css">
+    <link rel="stylesheet" type = "text/css" href="css/shopping-cart.css">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@600&family=Palanquin+Dark&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@600&family=Palanquin+Dark&family=Yeseva+One&display=swap');
+</style>
+
+<body>
+    <nav>
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Stefmar Logo">
+                </a>
+            </div>
+            <div class="menu-button">
+                <img src="assets/images/menu-icon.png" alt="Menu Icon">
+            </div>
+            <ul class="nav-bar">
+                <a href="index.html">Home</a>
+                <a href="index.html#about-us">About Us</a>
+                <a href="product-list-page.html">Shop</a>
+                <a href="#">FAQ</a>
+                <a href="#footer">Contact Us</a>
+            </ul>
+            <div class="icons">
+                <div class="search-container">
+                    <form class="search-box">
+                        <input type="search" class="search-input" placeholder="Search..."/>
+                    </form>
+                </div>
+                <a href="shopping-cart.html" class="shopping-cart-button">
+                    <img src="assets/images/bowl.png" alt="Shopping Cart Button">
+                </a>
+            </div>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Stefmar Logo">
+                </a>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="index.html#about-us">About Us</a>
+            <a href="product-list-page.html">Shop</a>
+            <a href="#">FAQ</a>
+            <a href="#footer">Contact Us</a>
+            <div class="sidebar-icons">
+                <form class="search-box">
+                    <input type="search" class="search-input" placeholder="Search..."/>
+                </form>
+                <div class="sidebar-cart">
+                    <a href="shopping-cart.html" class="shopping-cart-button">
+                        <img src="assets/images/bowl.png" alt="Shopping Cart Button">
+                    </a>
+                    <a href="shopping-cart.html" class="shopping-cart-button">
+                        <p>Your Cart (2)</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="cart-bar">
+        <div class="backbutton">
+            <a href="#" onclick="goBack()">
+                <img src="assets/images/left-arrow.png" alt="Back Arrow">
+            </a>
+        </div>
+        <h1>Checkout</h1>
+    </div>
+
+    <div class="progress-bar">
+        <div class="circle-normal">
+            <p>1</p>
+        </div>
+        <div class="line"></div>
+        <div class="circle-normal">
+            <p>2</p>
+        </div>
+        <div class="line"></div>
+        <div class="circle-darkened">
+            <p>3</p>
+        </div>
+    </div>
+
+    <div class="checkout-part">
+        <h2>Billing address is the same as the shipping address</h2>
+        <div class="address-button">
+            <ul>
+                <li>
+                    <input type="radio" id="f-option" name="selector">
+                    <label for="f-option">Yes</label>
+                </li>
+                <li>
+                    <input type="radio" id="s-option" name="selector">
+                    <label for="s-option">No</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="checkout-header">
+        <div class="circle-brown-darkened">
+            <p>1</p>
+        </div>
+        <h2>Payment Method</h2>
+    </div>
+    <div class="payment-part">
+        <div class="payment-method-row">
+            <div class="payment-method">
+                <button type="button" class="payment-button">
+                    <img src="assets/images/credit-card.png" alt="Card Icon"/>
+                    <p>Card</p>
+                </button>
+            </div>
+            <div class="payment-method">
+                <button type="button" class="payment-button">
+                    <img src="assets/images/money.png" alt="Cash Icon"/>
+                    <p>Gift Card</p>
+                </button>
+            </div>
+            <div class="payment-method">
+                <button type="button" class="payment-button">
+                    <img src="assets/images/paypal.png" alt="Paypal Icon"/>
+                    <p>Paypal</p>
+                </button>
+            </div>
+        </div>
+        <div class="payment-method-row">
+            <div class="payment-method">
+                <button type="button" class="payment-button">
+                    <img src="assets/images/google.png" alt="Google Icon"/>
+                    <p>Google Pay</p>
+                </button>
+            </div>
+            <div class="payment-method">
+                <button type="button" class="payment-button">
+                    <img src="assets/images/apple.png" alt="Apple Icon"/>
+                    <p>Apple Pay</p>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="checkout-header">
+        <div class="circle-brown-darkened">
+            <p>2</p>
+        </div>
+        <h2>Credit Card Information</h2>
+    </div>
+    <div class="card-part">
+        
+    </div>
+
+    <footer id="footer" class="footer-desktop">
+        <ul class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="#about-us">About Us</a>
+            <a href="product-list-page.html">Shop</a>
+            <a href="#">FAQ</a>
+            <div class="footer-logo">
+                <img src="assets/images/footer-logo.png" alt="Stefmar Logo">
+            </div>
+        </ul>
+        <div class="footer-contact">
+            <div class="contact-us-header">
+                <h1>Contact Us</h1>
+            </div>
+            <ul class="contact-details">
+                <div class="circle-container">
+                    <div class="circle">
+                        <img src="assets/images/location.png" alt="Location Pin">
+                    </div>
+                    <span>517-519 Bunnerong Rd, Matraville</span>
+                </div>
+                <div class="circle-container">
+                    <div class="circle">
+                        <img src="assets/images/smartphone.png" alt="Smartphone">
+                    </div>
+                    <span>+61 1300 139 756</span>
+                </div>
+                <div class="circle-container">
+                    <div class="circle">
+                        <img src="assets/images/email.png" alt="Email">
+                    </div>
+                    <span>sales@stefmarpetcare.com.au</span>
+                </div>
+            </ul>
+        </div>
+        <div class="footer-socials">
+            <div class="socials-header">
+                <h1>Follow Our Socials</h1>
+            </div>
+            <ul class="socials-details">
+                <div class="circle-container">
+                    <div class="circle">
+                        <img src="assets/images/instagram.png" alt="Instagram logo">
+                    </div>
+                    <span>Instagram</span>
+                </div>
+                <div class="circle-container">
+                    <div class="circle">
+                        <img src="assets/images/facebook.png" alt="Facebook logo">
+                    </div>
+                    <span>Facebook</span>
+                </div>
+                <div class="circle-container">
+                    <div class="circle">
+                        <img src="assets/images/twitter.png" alt="Twitter logo">
+                    </div>
+                    <span>X</span>
+                </div>
+            </ul>
+        </div>
+    </footer>
+
+    <footer id="footer" class="footer-mobile">
+        <div class="mobile-footer-header">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="mobile-footer-content">
+            <div class="content-headers">
+                <div class="circle">
+                    <img src="assets/images/location.png" alt="Location Pin">
+                </div>
+                <div class="circle">
+                    <img src="assets/images/smartphone.png" alt="Smartphone">
+                </div>
+                <div class="circle">
+                    <img src="assets/images/email.png" alt="Email">
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>517-519 Bunnerong Rd, Matraville</p>
+                </div>
+                <div class="footer-info">
+                    <div class="social-media">
+                        <div class="circle">
+                            <img src="assets/images/instagram.png" alt="Instagram logo">
+                        </div>
+                        <div class="circle">
+                            <img src="assets/images/facebook.png" alt="Facebook logo">
+                        </div>
+                        <div class="circle">
+                            <img src="assets/images/twitter.png" alt="Twitter logo">
+                        </div>
+                    </div>
+                    <p>+61 1300 139 756</p>
+                </div>
+                <div class="footer-info">
+                    <p>sales@stefmar-
+                        petcare.com.au</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script> 
+</body>
+</html>
