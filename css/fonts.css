@@ -53,7 +53,9 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
 
 .shop-now, .info-item1 p, .info-item2 p, .info-item3 p, 
 .posttext, .more-info-button button, .big-circle-container p,
-.delivery-method-button label, .address-button label {
+.delivery-method-button label, .address-button label,
+.card-part select, .card-part input::placeholder,
+.card-ccv input::placeholder {
   font-family: 'KoHo';
   font-size: 1em;
 }
@@ -116,7 +118,8 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
   font-size: 2em;
 }
 
-.counter input, .quantity h3, .card-part input, .card-ccv input {
+.counter input, .quantity h3, .card-part input, .card-ccv input
+.card-part select {
   font-family: 'KoHo';
   font-size: 1.3em;
 }

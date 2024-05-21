@@ -161,20 +161,24 @@
         <h2>Credit Card Information</h2>
     </div>
     <div class="card-part">
-        <label for="cardname">Name on Card</label>
-        <input type="text" id="cardname" name="cardname" value="">
-        <label for="cardnum">Card Number</label>
-        <input type="text" id="cardnum" name="cardnum" value="">
+        <div class="card-part-input">
+            <label for="cardname">Name on Card</label>
+            <input type="text" id="cardname" name="cardname" placeholder="Enter your name">
+        </div>
+        <div class="card-part-input">
+            <label for="cardnum">Card Number</label>
+            <input type="text" id="cardnum" name="cardnum" placeholder="Enter your card number">
+        </div> 
     </div>
     <div class="card-part-row">
         <div class="card-ccv">
             <label for="cardccv">CCV Number</label>
-            <input type="text" id="cardccv" name="cardccv" value="">
+            <input type="text" id="cardccv" name="cardccv" placeholder="CCV">
         </div>
         <div class="card-part">
             <label for="expmonth">Exp. Month</label>
             <select name="cardexpmonth" id="cardexpmonth">
-                <option value="placeholder">Month</option>
+                <option value="placeholder" disabled selected>Month</option>
                 <option value="jan">Jan</option>
                 <option value="feb">Feb</option>
                 <option value="mar">Mar</option>
@@ -193,7 +197,7 @@
         <div class="card-part">
             <label for="expyear">Exp. Year</label>
             <select name="cardexpyear" id="cardexpyear">
-                <option value="placeholder">Year</option>
+                <option value="placeholder" disabled selected>Year</option>
                 <option value="2024">2024</option>
                 <option value="2025">2025</option>
                 <option value="2026">2026</option>
@@ -204,6 +208,16 @@
             </select>
         </div>
     </div>
+    <div class="card-part">
+        <div class="checkout">
+            <a href="index.html">
+                <button class="checkout-button">
+                    <div class="checkout-text">Proceed</div>
+                </button>
+            </a>
+        </div>
+    </div>
+
 
     <footer id="footer" class="footer-desktop">
         <ul class="footer-nav">

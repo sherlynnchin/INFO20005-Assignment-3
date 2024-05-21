@@ -1005,17 +1005,24 @@ body,
 .card-part, .card-ccv {
     display: flex;
     flex-direction: column;
+    align-items: center; 
     justify-content: center;
-    align-items: center;
 }
 
-.card-part input, .card-ccv input {
-    margin-bottom: 1em;
-    width: 50%;
+.card-part-input {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
 }
 
-.card-part label, .card-part select {
+.card-part-input input, .card-ccv input {
     margin-bottom: 1em;
+    width: 100%; 
+}
+
+.card-part-input label, .card-ccv label, .card-part label {
+    align-self: flex-start;
+    margin-bottom: 0.5em;
 }
 
 .card-part-row {
@@ -1032,4 +1039,14 @@ body,
     background-color: #F7F8EA;
     border: none;
     border-bottom: 1px solid rgb(113, 113, 113);
+}
+
+.card-part select {
+    background-color: #E0E0E0; 
+    border: 1px solid #C1C1C1; 
+    padding: 0.5em;
+    font-family: 'KoHo'; 
+    font-size: 1em;
+    color: #5C5C5C; 
+    border-radius: 5px; 
 }

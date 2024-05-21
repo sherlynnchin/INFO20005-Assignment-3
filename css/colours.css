@@ -288,3 +288,18 @@ nav, .sidebar {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   border: 2px solid #EFE4D3; 
 }
+
+.card-part select {
+  background-color: #E0E0E0; 
+  border: 1px solid #C1C1C1; 
+  color: #5C5C5C;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.card-part select option[value="placeholder"] {
+  color: #b1b1b1;
+}
+
+.card-part input::placeholder,  .card-ccv input::placeholder {
+  color: #bababa;
+}
