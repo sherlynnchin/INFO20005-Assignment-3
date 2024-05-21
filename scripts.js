@@ -95,3 +95,36 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     });
 });
+
+// Filter section: to enable 'Confirm Changes' button 
+document.addEventListener('DOMContentLoaded', () => {
+    const typeButtons = document.querySelectorAll('.type-button');
+    const sizeButtons = document.querySelectorAll('.size-button');
+    const brandSelect = document.querySelector('.brand-select');
+    const confirmButton = document.querySelector('.confirm-button');
+
+    let isFilterSelection = false;
+
+    function enableConfirmButton() {
+        confirmButton.disabled = false;
+    }
+
+    typeButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            isFilterSelection = true;
+            enableConfirmButton();
+        });
+    });
+
+    sizeButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            isFilterSelection = true;
+            enableConfirmButton();
+        });
+    });
+
+    brandSelect.addEventListener('change', () => {
+        isFilterSelection = true;
+        enableConfirmButton();
+    });
+})

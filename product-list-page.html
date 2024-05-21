@@ -83,10 +83,10 @@
                             <h2>Categories</h2>
                         </div>
                         <ul class = "category-selection">
-                            <li><a href="product-list.html" >Dog</a></li>
-                            <li><a href="product-list.html" class = "no-underline">Cat</a></li>
-                            <li><a href="product-list.html" class = "no-underline">Fish</a></li>
-                            <li><a href="product-list.html" class = "no-underline">Other</a></li>
+                            <li><a href="product-list-page.html" >Dog</a></li>
+                            <li><a href="product-list-page.html" class = "no-underline">Cat</a></li>
+                            <li><a href="product-list-page.html" class = "no-underline">Fish</a></li>
+                            <li><a href="product-list-page.html" class = "no-underline">Other</a></li>
                         </ul>
                         <div class="filter-heading">
                             <h2>Filter</h2>
@@ -113,11 +113,19 @@
                             <button class = 'size-button'>Small</button>
                             <button class = 'size-button'>Medium</button>
                             <button class = 'size-button'>Large</button>
-                            <button class ='confirm-button'>Confirm Changes</button>
+                            <button class ='confirm-button' disabled>Confirm Changes</button>
                         </div>
                     </div>
                 </aside>
-                <main class="dog-product-section">  
+                
+                <main class="dog-product-section"> 
+                    <select class = 'sort-button'>
+                        <option value="option1">Sort</option>
+                        <option value="option2">Price: Low to High</option>
+                        <option value="option3">Price: High to Low</option>
+                        <option value="option3">Name: A to Z</option>
+                        <option value="option3">Name: Z to A</option>
+                    </select>
                     <div class="dog-product-list">
                         <div class="dog-products-product">
                             <div class="dog-products-list-item">
@@ -131,29 +139,29 @@
                             </div>
                             <div class="dog-products-list-item">
                                 <a class="dog-products-product-button" href="#">
-                                    <img src="assets/images/kazoo.png" alt="Kazoo">
+                                    <img src="assets/images/coprice-family-dog .png" alt="Kazoo">
                                 </a>
                                 <div class="dog-products-info">
-                                    <span class="dog-products-product-label">Kazoo Scratch Post High Bed w/Rope Ash</span>
-                                    <span class="dog-products-product-price">$235.99</span>
+                                    <span class="dog-products-product-label">Coprice Family Dog Food 20kg</span>
+                                    <span class="dog-products-product-price">$75.99</span>
                                 </div>
                             </div>
                             <div class="dog-products-list-item">
                                 <a class="dog-products-product-button" href="#">
-                                    <img src="assets/images/kazoo.png" alt="Kazoo">
+                                    <img src="assets/images/coprice-puppy.png" alt="Kazoo">
                                 </a>
                                 <div class="dog-products-info">
-                                    <span class="dog-products-product-label">Kazoo Scratch Post High Bed w/Rope Ash</span>
-                                    <span class="dog-products-product-price">$235.99</span>
+                                    <span class="dog-products-product-label">Coprice Working Dog Puppy Chicken 20kg</span>
+                                    <span class="dog-products-product-price">$79.99</span>
                                 </div>
                             </div>
                             <div class="dog-products-list-item">
                                 <a class="dog-products-product-button" href="#">
-                                    <img src="assets/images/kazoo.png" alt="Kazoo">
+                                    <img src="assets/images/royal-canin-medium-adult.png" alt="Kazoo">
                                 </a>
                                 <div class="dog-products-info">
-                                    <span class="dog-products-product-label">Kazoo Scratch Post High Bed w/Rope Ash</span>
-                                    <span class="dog-products-product-price">$235.99</span>
+                                    <span class="dog-products-product-label">Royal Canin Medium Adult Dry Food 15kg</span>
+                                    <span class="dog-products-product-price">$109.99</span>
                                 </div>
                             </div>
                             <div class="dog-products-list-item">
@@ -205,6 +213,6 @@
                     </div>
                 </main>
         </div>
-       
+        <script src="scripts.js"></script>  
     </body>  
 <html>

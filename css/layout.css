@@ -774,7 +774,7 @@ body,
 
 /* Product List Page*/
 .dog-product-list-header {
-    margin-left: 45em;
+    margin-left: 45.5em;
     margin-top: 2%;
     letter-spacing: 0.5em;
     display: flex;   
@@ -815,45 +815,37 @@ body,
 
 .filter-square {
     position: absolute;
-    top: 7%;
-    bottom: -1.25em;
+    top: 18%;
     left: 20%;
     transform: translateX(-50%);
     width: 15.5em;
     height: 32em; 
     margin-left: 6.25em;
     align-items: stretch;
+    z-index: 10;
 }
 .filter-sub-heading {
     margin-left: 0.5em; 
 }
 
-.type-button {
+.type-button, .size-button {
     margin: 0.25em; 
-    margin-left: 0.55em; 
+    margin-left: 1em; 
     border: none;
-    padding: 0.3125em 1em;
-    border-radius: 0.25em;
-    cursor: pointer;
-    justify-content: center;
-}
-
-.size-button {
-    margin: 0.25em;
-    margin-left: 0.5em;  
-    border: none;
-    padding: 0.3125em 1em;
+    padding: 0.3125em 0.75em;
     border-radius: 0.25em;
     cursor: pointer;
     justify-content: center;
 }
 
 .brand-select {
-    margin-left: 1em; 
-    padding: 0.3125em 5em;
+    display: flex;
+    margin: 0.25em;  
+    margin-left: 1.85em;
     border: none;
-    cursor: pointer;
+    padding: 0.3125em 4.5em;
     border-radius: 0.25em;
+    cursor: pointer;
     justify-content: center;
 }
 
@@ -868,39 +860,46 @@ body,
     justify-content: center;
 }
 
+.sort-button {
+    margin: 0.25em; 
+    margin-left: 10.7em; 
+    border: none;
+    padding:0.5em 0.7em;
+    border-radius: 0.25em;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
 .dog-product-section {
-    flex: 5;
-    display: flex;
+    display: column;
     white-space: nowrap;
+    padding: 1em;
 
 }
 .dog-products-product {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:1em 2.5em;
     width: 70%;
-    margin-left: 20%;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: column;
-
+    margin: 0 auto;
 }
+
 .dog-product-list {
-    margin-left: 7em;
-    margin-right: 7em;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     padding: 0.5rem;
 }
 .dog-products-list-item {
-    display: flex;
-    flex: 0 0 calc(30% - 0.5em);
+    display: grid;
+    flex-direction: column;
     max-width: 100%;
     height: 26em;
-    flex-wrap: wrap;
     overflow-wrap: break-word;
     word-wrap: break-word; 
     align-items: flex-start;
-    margin-bottom: 1em;
+    margin-bottom: 3em;
 }
 
 .dog-products-product img {
@@ -913,13 +912,12 @@ body,
     margin-top: 25px;
     padding: 0em;
     margin: 0;
-    width: 20em;
-    height: 20em;
+    width: 21em;
+    height: 21em;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
     border: none;
-    gap: 20px 
 }
 
 .dog-products-product-label {

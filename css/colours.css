@@ -178,8 +178,14 @@ nav, .sidebar {
   text-decoration: none;
 }
 
-.type-button {
+.type-button{
   background-color: #ADCB99;
+  color: #FFFFFF;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.sort-button{
+  background-color: #9AB687;
   color: #FFFFFF;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }

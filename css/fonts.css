@@ -31,7 +31,10 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
     font-family: 'KoHo';
   }
 
-
+  .sort-button {
+    font-family: 'KoHo';
+    font-size: 1em;
+  }
 .overlay-text-header h1 {
   font-family: 'Palanquin Dark';
   font-size: 3em;
