@@ -1000,3 +1000,28 @@ body,
 .payment-method img, .payment-method p {
     margin: 0;
 }
+
+.card-part, .card-ccv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-part label, .card-part input, .card-ccv input {
+    margin-bottom: 1em;
+    width: 50%;
+}
+
+.card-part select {
+    margin-bottom: 1em;
+}
+
+.card-part-row {
+    margin-top: 1em;
+    gap: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

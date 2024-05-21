@@ -161,7 +161,48 @@
         <h2>Credit Card Information</h2>
     </div>
     <div class="card-part">
-        
+        <label for="cardname">Name on Card</label>
+        <input type="text" id="cardname" name="cardname" value="">
+        <label for="cardnum">Card Number</label>
+        <input type="text" id="cardnum" name="cardnum" value="">
+    </div>
+    <div class="card-part-row">
+        <div class="card-ccv">
+            <label for="cardccv">CCV Number</label>
+            <input type="text" id="cardccv" name="cardccv" value="">
+        </div>
+        <div class="card-part">
+            <label for="expmonth">Exp. Month</label>
+            <select name="cardexpmonth" id="cardexpmonth">
+                <option value="placeholder">Month</option>
+                <option value="jan">Jan</option>
+                <option value="feb">Feb</option>
+                <option value="mar">Mar</option>
+                <option value="apr">Apr</option>
+                <option value="may">May</option>
+                <option value="june">June</option>
+                <option value="july">July</option>
+                <option value="aug">Aug</option>
+                <option value="sept">Sept</option>
+                <option value="oct">Oct</option>
+                <option value="nov">Nov</option>
+                <option value="dec">Dec</option>
+            </select>
+        </div>
+
+        <div class="card-part">
+            <label for="expyear">Exp. Year</label>
+            <select name="cardexpyear" id="cardexpyear">
+                <option value="placeholder">Year</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+            </select>
+        </div>
     </div>
 
     <footer id="footer" class="footer-desktop">
