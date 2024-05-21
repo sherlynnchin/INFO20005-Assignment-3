@@ -116,14 +116,14 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
   font-size: 2em;
 }
 
-.counter input, .quantity h3 {
+.counter input, .quantity h3, .card-part input, .card-ccv input {
   font-family: 'KoHo';
   font-size: 1.3em;
 }
 
 .pretext, .big-circle-container h2, .review h1,
 .progress-bar p, .checkout-part h2, .circle-brown-darkened p,
-.payment-method p {
+.payment-method p, .card-part label, .card-ccv label {
   font-family: 'KoHo';
   font-size: 1.5em;
 }

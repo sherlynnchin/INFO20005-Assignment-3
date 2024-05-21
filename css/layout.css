@@ -974,6 +974,7 @@ body,
     align-items: center;
     justify-content: center;
     margin-top: 3em;
+    margin-bottom: 2em;
 }
 
 .payment-part {
@@ -1008,12 +1009,12 @@ body,
     align-items: center;
 }
 
-.card-part label, .card-part input, .card-ccv input {
+.card-part input, .card-ccv input {
     margin-bottom: 1em;
     width: 50%;
 }
 
-.card-part select {
+.card-part label, .card-part select {
     margin-bottom: 1em;
 }
 
@@ -1024,4 +1025,11 @@ body,
     flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+
+.card-part input, .card-ccv input {
+    line-height: 2em;
+    background-color: #F7F8EA;
+    border: none;
+    border-bottom: 1px solid rgb(113, 113, 113);
 }
