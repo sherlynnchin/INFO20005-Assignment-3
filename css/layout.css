@@ -1050,3 +1050,51 @@ body,
     color: #5C5C5C; 
     border-radius: 5px; 
 }
+
+.confirmation {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.confirmation img {
+    width: 20%;
+    height: auto;
+}
+
+.confirmation h1, .confirmation h2 {
+    margin-bottom: 0;
+}
+
+.confirmation p {
+    width: 30%;
+}
+
+.order-details-button {
+    margin-top: 1em;
+    padding: 1em 4em;
+    border-radius: 10px;
+    border: none;
+}
+
+.order-details-button a, .back-to-shopping a {
+    text-decoration: none;
+}
+
+.back-to-shopping {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: 10em;
+}
+
+.back-to-shopping img {
+    width: 8%;
+    height: auto;
+    margin-right: 1em;
+}

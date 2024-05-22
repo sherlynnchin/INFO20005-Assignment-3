@@ -12,15 +12,11 @@ p,
 .about-text h1,
 .info-item1 h2, .info-item2 h2, .info-item3 h2,
 .info-item1 p, .info-item2 p, .info-item3 p,
-.best-sellers-header h1,
-.product-details h1,
-.counter span,
-.ingredients-header h1,
-.reviews-header h1,
-.review h1,
-.profile h1,
-.cart-bar h1,
-.order-summary h1 {
+.best-sellers-header h1, .product-details h1,
+.counter span, .ingredients-header h1,
+.reviews-header h1, .review h1, .profile h1,
+.cart-bar h1, .order-summary h1, .order-details-button a,
+.confirmation h1 {
     color: #303030;
 }
 
@@ -215,7 +211,7 @@ nav, .sidebar {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.category-selection li a {
+.category-selection li a, .back-to-shopping a {
   color: #717171;
 }
 
@@ -236,7 +232,7 @@ nav, .sidebar {
   color: #303030
 }
 
-.dog-product-square, .payment-method button {
+.dog-product-square, .payment-method button, .order-details-button {
   background-color: #CEDEC3;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
 }
