@@ -88,10 +88,18 @@ function goBack() {
 
 document.addEventListener('DOMContentLoaded', (event) => {
     const buttons = document.querySelectorAll('.payment-button');
+    let activeButton = null;
 
     buttons.forEach(button => {
         button.addEventListener('click', () => {
-            button.classList.toggle('clicked');
+            // Remove 'active' class from the currently active button
+            if (activeButton) {
+                activeButton.classList.remove('active');
+            }
+            // Add 'active' class to the clicked button
+            button.classList.add('active');
+            // Update the activeButton reference
+            activeButton = button;
         });
     });
 });
