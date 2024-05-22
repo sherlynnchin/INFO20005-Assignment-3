@@ -90,7 +90,7 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
   font-size: 1.4em;
 }
 
-.footer-nav a {
+.footer-nav a, .mobile-footer-header h1 {
   font-family: 'Yeseva One';
   font-size: 2em;
 }
@@ -178,7 +178,34 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
   .info-item1 h2, .info-item2 h2, .info-item3 h2 {
     font-size: 1em;
   }
+
+  .product-header h1 {
+    font-size: 1.3em;
+  }
+  .product-detail-price h2 {
+    font-size: 1.4em;
+  }
+
   .footer-info p {
     font-size: 0.8em;
   }
+
+  .confirmation h1 {
+    font-size: 2em;
+    letter-spacing: 0.1em;
+  }
+  .confirmation h2 {
+    font-size: 1.5em;
+  }
+  .confirmation p {
+    font-size: 0.9em;
+  }
+  .order-details-button a {
+    font-size: 1em;
+  }
+  .back-to-shopping a {
+    font-size: 1em;
+  }
+  
+
 }
