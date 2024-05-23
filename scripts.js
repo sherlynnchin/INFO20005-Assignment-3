@@ -31,7 +31,25 @@ function updatePrice(size) {
     } else if (size === "20") {
         document.getElementById("priceDisplay").innerText = "$75.99";
     }
+
+    const containers = document.querySelectorAll('.size-circle-container');
+
+    // Loop through each container and remove the active class
+    containers.forEach(container => {
+        container.classList.remove('active');
+    });
+
+    // Add the active class to the clicked radio button's parent container
+    const selectedContainer = document.querySelector(`input[name="size"][value="${size}"]`).parentNode;
+    selectedContainer.classList.add('active');
 }
+
+// Add event listeners to radio buttons
+document.querySelectorAll('input[name="size"]').forEach(radio => {
+    radio.addEventListener('change', function() {
+        updatePrice(this.value);
+    });
+});
 
 function updatePrice2(size) {
     if (size === "15") {
@@ -39,6 +57,17 @@ function updatePrice2(size) {
     } else if (size === "20") {
         document.getElementById("priceDisplay").innerText = "$64.99";
     }
+
+    const containers = document.querySelectorAll('.size-circle-container');
+
+    // Loop through each container and remove the active class
+    containers.forEach(container => {
+        container.classList.remove('active');
+    });
+
+    // Add the active class to the clicked radio button's parent container
+    const selectedContainer = document.querySelector(`input[name="size"][value="${size}"]`).parentNode;
+    selectedContainer.classList.add('active');
 }
 
 function increaseCount(element) {

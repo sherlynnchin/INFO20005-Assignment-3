@@ -130,11 +130,12 @@ nav, .sidebar {
 }
 
 .size-circle-container:hover {
-  background-color: #ccac7f;
+  background-color: #d8c1a1;
 }
 
-.size-circle-container input[type="radio"]:checked + label{
+.size-circle-container.active {
   background-color: #C8A36F;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .counter input {
