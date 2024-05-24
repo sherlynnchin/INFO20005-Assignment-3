@@ -931,7 +931,7 @@ body,
 
 .sort-button {
     margin: 0.25em; 
-    margin-left: 10.7em; 
+    margin-left: 9.9em; 
     border: none;
     padding:0.5em 0.7em;
     border-radius: 0.25em;
@@ -981,8 +981,8 @@ body,
     margin-top: 25px;
     padding: 0em;
     margin: 0;
-    width: 21em;
-    height: 21em;
+    width: 19em;
+    height: 19em;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
