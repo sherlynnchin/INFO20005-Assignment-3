@@ -1051,7 +1051,7 @@ body,
     margin-top: 0;
 }
 
-
+/* checkout page */
 .progress-bar {
     display: flex;
     justify-content: center;
@@ -1194,6 +1194,38 @@ body,
     flex-direction: row;
 }
 
+@media (max-width: 391px) {
+    .circle-darkened,
+    .circle-brown-darkened,
+    .circle-normal {
+        width: 3em;
+        height: 3em; 
+    }
+    .progress-bar {
+        margin-top: 5%;
+    }
+    .name-input {
+        gap: 2em;
+    }
+    .name-part {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .card-part-input {
+        width: 80%;
+    }
+    .card-part-row {
+        gap: 2em;
+        padding-left: 10%;
+        padding-right: 10%;
+        margin-top: 1em;
+    }
+    .card-part select {
+        width: 6em;
+    }
+}
+
+/* confirmation page */
 .confirmation {
     margin-top: 10%;
     display: flex;
