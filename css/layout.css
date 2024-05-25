@@ -1071,10 +1071,25 @@ body,
     margin: 0;
 }
 
-.card-part, .card-ccv {
+.name-input {
+    display: flex;
+    flex-direction: row;
+    gap: 6em;
+}
+
+.card-part, .card-ccv, .payment-summary-final {
     display: flex;
     flex-direction: column;
     align-items: center; 
+    justify-content: center;
+}
+
+.name-part {
+    padding-left: 30%;
+    padding-right: 10%;
+    align-items: flex-start;
+    display: inline-block;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -1089,7 +1104,7 @@ body,
     width: 100%; 
 }
 
-.card-part-input label, .card-ccv label, .card-part label {
+.card-part-input label, .card-ccv label, .card-part label, .name-part label {
     align-self: flex-start;
     margin-bottom: 0.5em;
 }
@@ -1101,9 +1116,20 @@ body,
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 1em;
 }
 
-.card-part input, .card-ccv input {
+.payment-summary-details {
+    width: 40%;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.card-part input, .card-ccv input, .name-part input {
     line-height: 2em;
     background-color: #F7F8EA;
     border: none;
@@ -1118,6 +1144,11 @@ body,
     font-size: 1em;
     color: #5C5C5C; 
     border-radius: 5px; 
+}
+
+.payment-summary-details {
+    display: flex;
+    flex-direction: row;
 }
 
 .confirmation {

@@ -84,7 +84,7 @@
     </div>
 
     <div class="progress-bar">
-        <div class="circle-normal">
+        <div class="circle-darkened">
             <p>1</p>
         </div>
         <div class="line"></div>
@@ -92,122 +92,99 @@
             <p>2</p>
         </div>
         <div class="line"></div>
-        <div class="circle-darkened">
+        <div class="circle-normal">
             <p>3</p>
         </div>
     </div>
 
-    <div class="checkout-part">
-        <h2>Billing address is the same as the shipping address</h2>
-        <div class="address-button">
-            <ul>
-                <li>
-                    <input type="radio" id="f-option" name="selector">
-                    <label for="f-option">Yes</label>
-                </li>
-                <li>
-                    <input type="radio" id="s-option" name="selector">
-                    <label for="s-option">No</label>
-                </li>
-            </ul>
-        </div>
-    </div>
     <div class="checkout-header">
         <div class="circle-brown-darkened">
             <p>1</p>
         </div>
-        <h2>Payment Method</h2>
+        <h2>Personal Details</h2>
     </div>
-    <div class="payment-part">
-        <div class="payment-method-row">
-            <div class="payment-method">
-                <button type="button" class="payment-button">
-                    <img src="assets/images/credit-card.png" alt="Card Icon"/>
-                    <p>Card</p>
-                </button>
+    <div class="name-part">
+        <div class="name-input">
+            <div class="card-part-input">
+                <label for="cardname">First Name</label>
+                <input type="text" id="cardname" name="cardname" placeholder="Enter your first name">
             </div>
-            <div class="payment-method">
-                <button type="button" class="payment-button">
-                    <img src="assets/images/money.png" alt="Cash Icon"/>
-                    <p>Gift Card</p>
-                </button>
-            </div>
-            <div class="payment-method">
-                <button type="button" class="payment-button">
-                    <img src="assets/images/paypal.png" alt="Paypal Icon"/>
-                    <p>Paypal</p>
-                </button>
+            <div class="card-part-input">
+                <label for="cardname">Last Name</label>
+                <input type="text" id="cardname" name="cardname" placeholder="Enter your last name">
             </div>
         </div>
-        <div class="payment-method-row">
-            <div class="payment-method">
-                <button type="button" class="payment-button">
-                    <img src="assets/images/google.png" alt="Google Icon"/>
-                    <p>Google Pay</p>
-                </button>
-            </div>
-            <div class="payment-method">
-                <button type="button" class="payment-button">
-                    <img src="assets/images/apple.png" alt="Apple Icon"/>
-                    <p>Apple Pay</p>
-                </button>
-            </div>
-        </div>
+        <div class="card-part-input">
+            <label for="cardnum">Phone Number</label>
+            <input type="text" id="cardnum" name="cardnum" placeholder="+61 XXXXXXXXX">
+        </div> 
     </div>
+
     <div class="checkout-header">
         <div class="circle-brown-darkened">
             <p>2</p>
         </div>
-        <h2>Credit Card Information</h2>
+        <h2>Address Details</h2>
+    </div>
+    <div class="card-part-row">
+        <div class="card-part">
+            <label for="expmonth">Country</label>
+            <select name="cardexpmonth" id="cardexpmonth">
+                <option value="placeholder" disabled selected>Country</option>
+                <option value="jan">Afghanistan</option>
+                <option value="feb">Albania</option>
+                <option value="mar">Algeria</option>
+                <option value="apr">Andorra</option>
+                <option value="may">Angola</option>
+                <option value="june">Argentina</option>
+                <option value="july">Armenia</option>
+                <option value="aug">Australia</option>
+                <option value="sept">Austria</option>
+                <option value="nov">Bahamas</option>
+                <option value="dec">Bangladesh</option>
+            </select>
+        </div>
+        <div class="card-ccv">
+            <label for="cardccv">Postal Code</label>
+            <input type="text" id="cardccv" name="cardccv" placeholder="XXXX">
+        </div>
     </div>
     <div class="card-part">
         <div class="card-part-input">
-            <label for="cardname">Name on Card</label>
-            <input type="text" id="cardname" name="cardname" placeholder="Enter your name">
+            <label for="cardname">Address Line 1</label>
+            <input type="text" id="cardname" name="cardname" placeholder="">
         </div>
         <div class="card-part-input">
-            <label for="cardnum">Card Number</label>
-            <input type="text" id="cardnum" name="cardnum" placeholder="Enter your card number">
+            <label for="cardnum">Address Line 2</label>
+            <input type="text" id="cardnum" name="cardnum" placeholder="">
         </div> 
     </div>
     <div class="card-part-row">
-        <div class="card-ccv">
-            <label for="cardccv">CCV Number</label>
-            <input type="text" id="cardccv" name="cardccv" placeholder="CCV">
-        </div>
         <div class="card-part">
-            <label for="expmonth">Exp. Month</label>
+            <label for="expmonth">State</label>
             <select name="cardexpmonth" id="cardexpmonth">
-                <option value="placeholder" disabled selected>Month</option>
-                <option value="jan">Jan</option>
-                <option value="feb">Feb</option>
-                <option value="mar">Mar</option>
-                <option value="apr">Apr</option>
-                <option value="may">May</option>
-                <option value="june">June</option>
-                <option value="july">July</option>
-                <option value="aug">Aug</option>
-                <option value="sept">Sept</option>
-                <option value="oct">Oct</option>
-                <option value="nov">Nov</option>
-                <option value="dec">Dec</option>
+                <option value="placeholder" disabled selected>State</option>
+                <option value="jan">Queensland</option>
+                <option value="feb">Tasmania</option>
+                <option value="mar">NSW</option>
+                <option value="apr">Victoria</option>
+                <option value="may">Western Australia</option>
+                <option value="june">South Australia</option>
             </select>
         </div>
-
-        <div class="card-part">
-            <label for="expyear">Exp. Year</label>
-            <select name="cardexpyear" id="cardexpyear">
-                <option value="placeholder" disabled selected>Year</option>
-                <option value="2024">2024</option>
-                <option value="2025">2025</option>
-                <option value="2026">2026</option>
-                <option value="2027">2027</option>
-                <option value="2028">2028</option>
-                <option value="2029">2029</option>
-                <option value="2030">2030</option>
-            </select>
+        <div class="card-ccv">
+            <label for="cardccv">City</label>
+            <input type="text" id="cardccv" name="cardccv" placeholder="Enter City ">
         </div>
     </div>
+
+    <div class="card-part">
+        <div class="card-part-input">
+            <label for="cardname">Additional Information</label>
+            <input type="text" id="cardname" name="cardname" placeholder="Unit/Apartment Number etc">
+        </div>
+    </div>
+
     <div class="card-part">
         <div class="checkout">
             <a href="checkout2.html">

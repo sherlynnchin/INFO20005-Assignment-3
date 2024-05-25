@@ -55,7 +55,7 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
 .posttext, .more-info-button button, .big-circle-container p,
 .delivery-method-button label, .address-button label,
 .card-part select, .card-part input::placeholder,
-.card-ccv input::placeholder {
+.card-ccv input::placeholder, .name-part input::placeholder {
   font-family: 'KoHo';
   font-size: 1em;
 }
@@ -120,7 +120,7 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
 }
 
 .counter input, .quantity h3, .card-part input, .card-ccv input,
-.card-part select, .confirmation p {
+.card-part select, .confirmation p, .name-part input {
   font-family: 'KoHo';
   font-size: 1.3em;
 }
@@ -128,7 +128,7 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
 .pretext, .big-circle-container h2, .review h1,
 .progress-bar p, .checkout-part h2, .circle-brown-darkened p,
 .payment-method p, .card-part label, .card-ccv label, .back-to-shopping a,
-.size-circle-container label {
+.size-circle-container label, .name-part label {
   font-family: 'KoHo';
   font-size: 1.5em;
 }
