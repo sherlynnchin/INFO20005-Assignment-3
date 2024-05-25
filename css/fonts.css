@@ -187,7 +187,7 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
   .big-circle-container h2, .more-info-button button {
     font-size: 1.1em;
   }
-  .product-detail-price h2 {
+  .product-detail-price h2, .cart-item-info h2 {
     font-size: 1.4em;
   }
   .footer-info p {

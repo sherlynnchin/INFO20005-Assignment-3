@@ -214,7 +214,149 @@
                 </div>
             </div>
         </div>
-    </main>
+    </div>
+
+    <div class="shopping-cart-mobile">
+        <div class="cart-list">
+            <div class="cart-item">
+                <div class="small-square">
+                    <img src="assets/images/coprice.png" alt="Coprice">
+                </div>
+                <div class="mobile-cart-info">
+                    <div class="cart-item-info">
+                        <h2>Coprice Working Dog Beef</h2>
+                    </div>
+                    <div class="cart-item-info">
+                        <h3>20kg</h3>
+                        <p>$75.99</p>
+                    </div>
+                    <div class="quantity">
+                        <h3>Quantity</h3>
+                        <div class="counter">
+                            <span class="down" onClick="decreaseCount(this)">-</span>
+                            <input type="text" value="1">
+                            <span class="up" onClick='increaseCount(this)'>+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="small-square">
+                    <img src="assets/images/supervite.png" alt="Supervite">
+                </div>
+                <div class="mobile-cart-info">
+                    <div class="cart-item-info">
+                        <h2>Supervite Gold Adult Chicken Supercoat</h2>
+                    </div>
+                    <div class="cart-item-info">
+                        <h3>15kg</h3>
+                        <p>$34.99</p>
+                    </div>
+                    <div class="quantity">
+                        <h3>Quantity</h3>
+                        <div class="counter">
+                            <span class="down" onClick="decreaseCount(this)">-</span>
+                            <input type="text" value="1">
+                            <span class="up" onClick='increaseCount(this)'>+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="order-summary">
+            <div class="subtotal">
+                <h1>Total Summary</h1>
+                <div class="price-summary">
+                    <div class="price-line">
+                        <h2>Subtotal:</h2>
+                        <p>$110.98</p>
+                    </div>
+                    <div class="price-line">
+                        <h2>Shipping:</h2>
+                        <p>Calculated at checkout</p>
+                    </div>
+                    <div class="delivery-method">
+                        <h2>Delivery Method</h2>
+                        <div class="delivery-method-button">
+                            <ul>
+                                <li>
+                                    <input type="radio" id="f-option" name="selector">
+                                    <label for="f-option">Deliver</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="s-option" name="selector">
+                                    <label for="s-option">Pick Up</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="checkout">
+                        <a href="checkout1.html">
+                            <button class="checkout-button">
+                                <div class="checkout-text">Checkout</div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="suggestion">
+                <hr class="separator">
+                <h1>You May Also Like:</h1>
+                <div class="suggestion-list">
+                    <div class="best-seller-product">
+                        <div class="product-item">
+                            <a class="product-button" href="./coprice-product-page.html">
+                                <img src="assets/images/coprice.png" alt="Coprice">
+                            </a>
+                            <div class="product-info">
+                                <span class="product-label">Coprice Working Dog Beef</span>
+                                <span class="product-price">$45.99</span>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a class="product-button" href="./supervite-product-page.html">
+                                <img src="assets/images/kazoo.png" alt="Kazoo">
+                            </a>
+                            <div class="product-info">
+                                <span class="product-label">Kazoo Scratch Post High Bed w/Rope Ash</span>
+                                <span class="product-price">$235.99</span>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a class="product-button" href="#">
+                                <img src="assets/images/catit.png" alt="Catit">
+                            </a>
+                            <div class="product-info">
+                                <span class="product-label">Catit 2.0 Cat Senses Food Tree</span>
+                                <span class="product-price">$44.99</span>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a class="product-button" href="#">
+                                <img src="assets/images/optimum.png" alt="Optimum">
+                            </a>
+                            <div class="product-info">
+                                <span class="product-label">Optimum Dog Wet 6x400g Beef Rice</span>
+                                <span class="product-price">$22.99</span>
+                            </div>
+                        </div>
+                        <div class="product-item">
+                            <a class="product-button" href="#">
+                                <img src="assets/images/bb-dog-bed.png" alt="BB Dog Bed">
+                            </a>
+                            <div class="product-info">
+                                <span class="product-label">Barkley & Bella Dog Bed 65x55 Manhattan Almond</span>
+                                <span class="product-price">$89.99</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="./scripts.js"></script>
 </body>
 </html>
