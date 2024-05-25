@@ -2,8 +2,7 @@ body {
     background-color: #F7F8EA;
   }
   
-h1,
-.about-text h2 {
+h1, .about-text h2, .payment-summary-details h3 {
     color: #8C602D;
   }
   
