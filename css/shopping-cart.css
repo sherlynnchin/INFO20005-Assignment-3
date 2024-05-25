@@ -4,25 +4,26 @@
 
 .cart-bar { 
     top: 9em;
+    margin-top: 1em;
+    display: flex;
     text-align: center;
     align-items: center;
-    justify-content: center; 
     padding: 1em;
+    gap: 13em;
     width: 100%;
     background-color: #F7F8EA;
 }
 
 .backbutton { 
-    position: absolute; 
-    left: 1rem; 
-    width: 4rem; 
-    height: 4rem; 
-    margin-left: 3em;
+    display: inline-block;
+    margin-left: -10%;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .backbutton img {
-    width: 70%;
-    height: 70%;
+    width: 15%;
+    height: auto;
 }
 
 .split {
@@ -162,13 +163,19 @@ input[type=radio] {
 @media (max-width: 391px) {
   .cart-bar { 
     top: 9em;
-    padding: 1em;
-    align-items: center;
+    margin-top: 1em;
+    padding: 0;
+    gap: 0;
   }
-.backbutton img {
-    width: 60%;
-    height: 60%;
-}
+  .backbutton { 
+    display: block;
+    width: 10em;
+    margin-left: -10%;
+  }
+  .backbutton img {
+    width: 30%;
+    height: auto;
+  }
   .split {
     display: none;
   }
@@ -225,18 +232,18 @@ input[type=radio] {
     width: 20em;
   }
   .suggestion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
   }
   .suggestion-list {
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center; 
     overflow-x: auto; 
-    padding: 0.5rem;
-    margin-top: 1em;
-    width: 50%;
+    padding: 0em;
+    margin-top: -5%;
+    margin-bottom: -3%;
+    gap: 1em;
   }
 
 }
