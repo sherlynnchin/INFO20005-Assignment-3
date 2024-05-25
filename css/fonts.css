@@ -52,7 +52,7 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
 }
 
 .shop-now, .info-item1 p, .info-item2 p, .info-item3 p, 
-.posttext, .more-info-button button, .big-circle-container p,
+.posttext,
 .delivery-method-button label, .address-button label,
 .card-part select, .card-part input::placeholder,
 .card-ccv input::placeholder, .name-part input::placeholder {
@@ -121,7 +121,9 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
 }
 
 .counter input, .quantity h3, .card-part input, .card-ccv input,
-.card-part select, .confirmation p, .name-part input, .payment-summary-details p {
+.card-part select, .confirmation p, .name-part input, .payment-summary-details p,
+.big-circle-container p, .more-info-button button, #description, #recommendation,
+#shipping {
   font-family: 'KoHo';
   font-size: 1.3em;
 }
@@ -168,30 +170,29 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
     font-size: 3em;
     letter-spacing: 0.2em;
   }
-  .overlay-text-sub p {
+  .overlay-text-sub p, .counter input, .info-item1 h2, 
+  .info-item2 h2, .info-item3 h2, .order-details-button a, 
+  .back-to-shopping a, .product-detail-selection h3,
+  .size-circle-container label, .counter span, #description,
+  #recommendation, #shipping {
     font-size: 1em;
   }
-
   .category-heading h1 {
     letter-spacing: 0.02em;
     font-size: 1.6em;
   }
-
-  .info-item1 h2, .info-item2 h2, .info-item3 h2 {
-    font-size: 1em;
-  }
-
   .product-header h1 {
     font-size: 1.3em;
+  }
+  .big-circle-container h2, .more-info-button button {
+    font-size: 1.1em;
   }
   .product-detail-price h2 {
     font-size: 1.4em;
   }
-
   .footer-info p {
     font-size: 0.8em;
   }
-
   .confirmation h1 {
     font-size: 2em;
     letter-spacing: 0.1em;
@@ -202,12 +203,10 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
   .confirmation p {
     font-size: 0.9em;
   }
-  .order-details-button a {
-    font-size: 1em;
+  .big-circle-container p {
+    font-size: 0.8em;
   }
-  .back-to-shopping a {
-    font-size: 1em;
+  .ingredients-header h1 {
+    font-size: 1.7em;
   }
-  
-
 }
