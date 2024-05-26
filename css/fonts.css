@@ -131,7 +131,7 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
 .pretext, .big-circle-container h2, .review h1,
 .progress-bar p, .checkout-part h2, .circle-brown-darkened p,
 .payment-method p, .card-part label, .card-ccv label, .back-to-shopping a,
-.size-circle-container label, .name-part label, .payment-summary-details h2 {
+.size-circle-container label, .name-part label, .payment-summary-details h2, .address-button ul li {
   font-family: 'KoHo';
   font-size: 1.5em;
 }
@@ -181,7 +181,8 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
     letter-spacing: 0.02em;
     font-size: 1.6em;
   }
-  .product-header h1 {
+  .product-header h1, .card-part label, .payment-method p, .checkout-part h2,
+  .address-button ul li, .card-ccv label {
     font-size: 1.3em;
   }
   .big-circle-container h2, .more-info-button button {
@@ -190,14 +191,14 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
   .product-detail-price h2, .cart-item-info h2 {
     font-size: 1.4em;
   }
-  .footer-info p {
+  .footer-info p, .card-ccv input::placeholder {
     font-size: 0.8em;
   }
   .confirmation h1 {
     font-size: 2em;
     letter-spacing: 0.1em;
   }
-  .confirmation h2 {
+  .confirmation h2, .checkout-header h2 {
     font-size: 1.5em;
   }
   .confirmation p {

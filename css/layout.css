@@ -1161,7 +1161,6 @@ body,
     align-items: center;
     margin-bottom: 1em;
 }
-
 .payment-summary-details {
     width: 40%;
     margin-top: 1em;
@@ -1222,6 +1221,47 @@ body,
     }
     .card-part select {
         width: 6em;
+    }
+    .checkout-part {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .address-button ul li {
+        font-size: 1.5em;
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5em;
+    }
+    .payment-part {
+        margin-top: 1em;
+    }
+    .payment-method-row {
+        gap: 1.2em;
+        margin-bottom: 7%;
+        justify-content: center;
+    }
+    .payment-method button {
+        width: 8em;
+        height: 7em;
+    }
+    .payment-method img {
+        width: 2em;
+        height: auto;
+    }
+    .card-part select {
+        width: 5em;
+        height: auto;
+    }
+    .checkout {
+        margin-bottom: 2em;
+    }
+    .payment-summary-final {
+        margin-bottom: -5%;
+    }
+    .payment-summary-details {
+        width: 80%;
+        margin-top: 0;
+        margin-bottom: 1em;
     }
 }
 
