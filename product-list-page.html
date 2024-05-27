@@ -17,7 +17,7 @@
         @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@600&family=Palanquin+Dark&family=Yeseva+One&display=swap');
     </style>
 
-    <body>
+    <body id="product-list-page">
         <nav>
             <div class="navbar-container">
                 <div class="logo">
@@ -72,6 +72,32 @@
                 </div>
             </div>
         </nav>
+        <div class="categories">
+            <div class="category-heading">
+                <h1>Categories</h1>
+            </div>
+            <div class="category-buttons">
+                <div class="button-container">
+                    <a class="button button-dogs" href="product-list-page.html"><img src="assets/images/dog-category.png" alt="Dog Button"></a>
+                    <span class="button-label">Dogs</span>
+                </div>
+                <div class="button-container">
+                    <a class="button button-cats" href="#"><img src="assets/images/cat-category.png" alt="Cat Button"></a>
+                    <span class="button-label">Cats</span>
+                </div>
+                <div class="button-container">
+                    <a class="button button-fish" href="#"><img src="assets/images/fish-category.png" alt="Fish Button"></a>
+                    <span class="button-label">Fish</span>
+                </div>
+                <div class="button-container">
+                    <a class="button button-others" href="#"><img src="assets/images/bird-category.png" alt="Others Button"></a>
+                    <span class="button-label">Others</span>
+                </div>
+            </div>
+        </div>
+
+        <hr class="separator">
+        
         <div class ="dog-product-list-header">
             <h1>Dog Products</h1>
         </div>
@@ -209,9 +235,11 @@
                             </div>
                         </div>
                     </div>
+                    
                     <script src="scripts.js"></script>  
                 </main>  
         </div>
+       
         <div class="page-number">
             <ul>
                 <li><p> &lt;</p></li>

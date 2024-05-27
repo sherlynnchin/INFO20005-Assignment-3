@@ -212,7 +212,7 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
   }
 }
 
-/*Dog Product List - Mobile*/
+/*Dog Product List - Mobile plz dont reorganise this if not i cannot find it T_T*/
 @media (max-width: 391px){
   .dog-product-list-header {  
       font-size: 0.8em;

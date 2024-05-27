@@ -885,6 +885,10 @@ body,
 
 
 /* Product List Page*/
+
+#product-list-page .categories, #product-list-page .separator {
+    display: none;
+}
 .dog-product-list-header {
     margin-left: 41.5em;
     margin-top: 2%;
@@ -1077,6 +1081,11 @@ body,
     .container {
         display: none;
     }
+
+    #product-list-page .categories, #product-list-page .separator {
+        display: flex;
+    }
+    
 
     .page-number {
         display: none;
