@@ -27,7 +27,7 @@ h2,
   
 p, .product-detail-selection,.filter-sub-heading ,.type-button,
  .size-button, .brand-select, .confirm-button, .cart-item-info,
-  .cart-item-info h2 {
+  .cart-item-info h2, .page-number {
     font-family: 'KoHo';
   }
 
@@ -209,5 +209,13 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
   }
   .ingredients-header h1 {
     font-size: 1.7em;
+  }
+}
+
+/*Dog Product List - Mobile*/
+@media (max-width: 391px){
+  .dog-product-list-header {  
+      font-size: 0.8em;
+
   }
 }

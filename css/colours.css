@@ -219,12 +219,12 @@ nav, .sidebar {
   color: #717171;
 }
 
-.category-selection li a.no-underline {
+.category-selection li a.no-underline, .page-number ul li a {
   text-decoration: none;
   color: #717171;
 }
 
-.category-selection li a:hover {
+.category-selection li a:hover, .page-number ul li a:hover{
   color: #303030; 
 }
 
