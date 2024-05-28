@@ -685,7 +685,7 @@ body,
 }
 
 .ingredient-details p {
-    max-width: 80%;
+    max-width: 90%;
 }
 
 .reviews-header {
@@ -1073,7 +1073,7 @@ body,
     padding: 0 2em;
 }
 
-@media (max-width: 390px){
+@media (max-width: 391px){
     .dog-product-list-header {  
         margin-left: auto; 
         justify-content: center;
@@ -1180,7 +1180,7 @@ body,
 }
 
 /*Filter Bar - Mobile*/
-@media (max-width: 390px) {
+@media (max-width: 391px) {
 
     #filter-bar .separator {
         border: none; 
