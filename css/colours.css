@@ -15,7 +15,7 @@ p,
 .counter span, .ingredients-header h1,
 .reviews-header h1, .review h1, .profile h1,
 .cart-bar h1, .order-summary h1, .order-details-button a,
-.confirmation h1 {
+.confirmation h1, .empty-cart h1 {
     color: #303030;
 }
 
@@ -216,7 +216,7 @@ nav, .sidebar {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.category-selection li a, .back-to-shopping a {
+.category-selection li a, .back-to-shopping p {
   color: #717171;
 }
 

@@ -1487,18 +1487,26 @@ body,
 
 .back-to-shopping {
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     margin-top: 1em;
     margin-bottom: 10em;
 }
 
-.back-to-shopping img {
-    width: 8%;
-    height: auto;
-    margin-right: 1em;
+.back-to-shopping-arrow {
+    width: 20%;
 }
+
+.back-to-shopping-arrow img {
+    width: 40%;
+    height: auto;
+}
+
+.back-to-shopping-text {
+    width: 30%;
+    text-wrap: nowrap;
+}
+
 
 @media (max-width: 391px) {
     .confirmation {
@@ -1510,7 +1518,7 @@ body,
     .confirmation p {
         width: 70%;
     }
-    .back-to-shopping img {
-        width: 10%;
+    .back-to-shopping-arrow img {
+        width: 45%;
     }
 }
