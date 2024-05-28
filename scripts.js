@@ -34,17 +34,14 @@ function updatePrice(size) {
 
     const containers = document.querySelectorAll('.size-circle-container');
 
-    // Loop through each container and remove the active class
     containers.forEach(container => {
         container.classList.remove('active');
     });
 
-    // Add the active class to the clicked radio button's parent container
     const selectedContainer = document.querySelector(`input[name="size"][value="${size}"]`).parentNode;
     selectedContainer.classList.add('active');
 }
 
-// Add event listeners to radio buttons
 document.querySelectorAll('input[name="size"]').forEach(radio => {
     radio.addEventListener('change', function() {
         updatePrice(this.value);
@@ -60,12 +57,10 @@ function updatePrice2(size) {
 
     const containers = document.querySelectorAll('.size-circle-container');
 
-    // Loop through each container and remove the active class
     containers.forEach(container => {
         container.classList.remove('active');
     });
 
-    // Add the active class to the clicked radio button's parent container
     const selectedContainer = document.querySelector(`input[name="size"][value="${size}"]`).parentNode;
     selectedContainer.classList.add('active');
 }
@@ -111,6 +106,14 @@ function toggleDescription(descriptionId) {
     }
 }
 
+document.querySelector('.addtocart').addEventListener('click', function() {
+    changeCartButtonImage();
+});
+
+document.querySelector('.addtocartmobile').addEventListener('click', function() {
+    changeCartButtonImage();
+});
+
 function goBack() {
     window.history.back();
 }
@@ -121,13 +124,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
     buttons.forEach(button => {
         button.addEventListener('click', () => {
-            // Remove 'active' class from the currently active button
             if (activeButton) {
                 activeButton.classList.remove('active');
             }
-            // Add 'active' class to the clicked button
             button.classList.add('active');
-            // Update the activeButton reference
             activeButton = button;
         });
     });
