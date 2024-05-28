@@ -185,13 +185,13 @@ nav, .sidebar {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.sort-button{
+.sort-button-desktop{
   background-color: #9AB687;
   color: #FFFFFF;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.type-button:hover {
+.type-button:hover, .sort-button-desktop:hover {
   background-color: #A0B790;
   color: #FFFFFF;
 }
@@ -237,7 +237,7 @@ nav, .sidebar {
   color: #303030
 }
 
-.dog-product-square, .payment-method button, .order-details-button {
+.payment-method button, .order-details-button {
   background-color: #CEDEC3;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
 }
@@ -253,16 +253,29 @@ nav, .sidebar {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
 }
 
-.dog-products-product-button {
+.product-list-product-button-desktop, .product-list-product-button-mobile{
   background-color: rgba(206, 222, 195, 1);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); 
 }
-.dog-products-info {
+.product-list-info-desktop, .product-list-info-mobile {
   color: #717171;
 }
-.dog-products-product-price {
+.product-list-product-price-desktop, .product-list-product-price-mobile {
   color: #444343;
 }
+
+/* Product List - Mobile plz dont remove if not i cannot find T_T*/
+.sort-button-mobile, .filter-button {
+    background-color: #9AB687;
+    color: #FFFFFF;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+
+.sort-button-mobile:hover, .filter-button:hover {
+  background-color: #A0B790;
+  color: #FFFFFF;
+}
+
 
 .circle {
   background-color: #F6FEF2;

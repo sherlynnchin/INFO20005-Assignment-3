@@ -886,9 +886,10 @@ body,
 
 /* Product List Page*/
 
-#product-list-page .categories, #product-list-page .separator {
+#product-list-page .categories, #product-list-page .separator, .container-mobile {
     display: none;
 }
+
 .dog-product-list-header {
     margin-left: 41.5em;
     margin-top: 2%;
@@ -896,7 +897,7 @@ body,
     display: flex;   
 }
 
-.dog-products-product {
+.product-list-product-desktop {
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 1em 2.5em;
@@ -904,7 +905,7 @@ body,
     margin: 0 auto;
 }
 
-.container {
+.container-desktop {
     display: flex;
     gap: 1em;
     max-width: 1398px;
@@ -984,7 +985,7 @@ body,
     cursor: pointer;
     justify-content: center;
 }
-.sort-button {
+.sort-button-desktop {
     margin: 0.25em; 
     margin-left: 9.9em; 
     border: none;
@@ -1002,11 +1003,11 @@ body,
     padding: 1em;
 }
 
-.dog-product-list {
+.product-list-desktop{
     padding: 0.5rem;
 }
 
-.dog-products-list-item {
+.product-list-item-desktop {
     display: grid;
     flex-direction: column;
     max-width: 100%;
@@ -1017,12 +1018,12 @@ body,
     margin-bottom: 3em;
 }
 
-.dog-products-product img {
+.product-list-product-desktop img {
     max-width: 100%;
     max-height: 100%;
 }
 
-.dog-products-product-button{
+.product-list-product-button-desktop{
     display: flex;
     margin-top: 25px;
     padding: 0em;
@@ -1035,20 +1036,20 @@ body,
     border: none;
 }
 
-.dog-products-product-label {
+.product-list-product-label-desktop {
     display: flex;
     max-width: 14em;
     margin-top: 1em;
     margin-bottom: 1em;
 }
 
-.dog-products-product-price {
+.product-list-product-price-desktops {
     display: flex;
     flex: 0 0 calc(0% - 0.5em);
     align-items: flex-end;
 }
 
-.dog-products-info {
+.product-list-info-desktop {
     padding: 0;
     flex: 0 0 calc(0% - 0.5em);
     margin-top: 0;
@@ -1078,17 +1079,103 @@ body,
         justify-content: center;
 
     }
-    .container {
+
+    .container-desktop {
         display: none;
+    }
+
+    .container-mobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sort-filter-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5em;
+    }
+    .sort-button-mobile, .filter-button {
+        margin: 0.25em;
+        width: 11em;
+        height: 3em;
+        border: none;
+        padding: 0.5em;
+        border-radius: 0.25em;
+        text-align:center;
     }
 
     #product-list-page .categories, #product-list-page .separator {
         display: flex;
     }
-    
 
+    .product-list-mobile {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5em;
+        padding: 0.5em;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .product-list-product-mobile {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.2em;
+        padding: 0.5em;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .product-list-item-mobile {
+        display: grid;
+        flex-direction: column;
+        max-width: 100%;
+        overflow-wrap: break-word;
+        word-wrap: break-word; 
+        align-items: flex-start;
+        margin-bottom: 2em;
+    }
+    .product-list-product-button-mobile{
+        display: flex;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 1em;
+        padding: 0;
+        margin: 0;
+        width: 10.5em;
+        height: 10.5em;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        border: none;
+    }
+    
+    .product-list-product-button-mobile img {
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 5px;
+    }
+    
+    .product-list-info-mobile {
+        text-align: left;
+        margin-top: 0;
+    }
+    
+    .product-list-product-label-mobile {
+        display: flex;
+        max-width: 14em;
+        margin-top: 1em;
+        margin-bottom: 0.2em;
+    }
+
+    .product-list-product-price-mobile {
+        display: flex;
+        align-items: flex-end;
+    }
     .page-number {
-        display: none;
+        display: flex;
     }
 }
 
