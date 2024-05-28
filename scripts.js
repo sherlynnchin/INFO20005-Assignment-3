@@ -165,3 +165,74 @@ document.addEventListener('DOMContentLoaded', () => {
         enableConfirmButton();
     });
 })
+
+
+
+
+
+/* put any other js above this pls */
+/* form validation */
+document.getElementById('checkoutForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    var valid = true;
+
+    var firstName = document.getElementById('firstName');
+    if (firstName.value.trim() === '') {
+        valid = false;
+        document.getElementById('firstNameError').textContent = 'First Name is required.';
+    }
+
+    // Validate Last Name
+    var lastName = document.getElementById('lastName');
+    if (lastName.value.trim() === '') {
+        valid = false;
+        document.getElementById('lastNameError').textContent = 'Last Name is required.';
+    }
+
+    // Validate Phone Number
+    var phoneNumber = document.getElementById('phoneNumber');
+    if (phoneNumber.value.trim() === '') {
+        valid = false;
+        document.getElementById('phoneNumberError').textContent = 'Phone Number is required.';
+    }
+
+    // Validate Country
+    var country = document.getElementById('country');
+    if (country.value === '') {
+        valid = false;
+        document.getElementById('countryError').textContent = 'Country is required.';
+    }
+
+    // Validate Postal Code
+    var postalCode = document.getElementById('postalCode');
+    if (postalCode.value.trim() === '') {
+        valid = false;
+        document.getElementById('postalCodeError').textContent = 'Postal Code is required.';
+    }
+
+    // Validate Address Line 1
+    var address1 = document.getElementById('address1');
+    if (address1.value.trim() === '') {
+        valid = false;
+        document.getElementById('address1Error').textContent = 'Address Line 1 is required.';
+    }
+
+    // Validate State
+    var state = document.getElementById('state');
+    if (state.value === '') {
+        valid = false;
+        document.getElementById('stateError').textContent = 'State is required.';
+    }
+
+    // Validate City
+    var city = document.getElementById('city');
+    if (city.value.trim() === '') {
+        valid = false;
+        document.getElementById('cityError').textContent = 'City is required.';
+    }
+
+    if (valid) {
+        // If form is valid, redirect to checkout2.html
+        window.location.href = 'checkout2.html';
+    }
+});

@@ -229,3 +229,10 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
 
  
 }
+
+
+.error-message {
+  color: red;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
