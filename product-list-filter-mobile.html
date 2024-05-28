@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Stefmar</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type = "text/css" href="css/colours.css">
+        <link rel="stylesheet" type = "text/css" href="css/layout.css">
+        <link rel="stylesheet" type = "text/css" href="css/fonts.css">
+        <link rel="stylesheet" type = "text/css" href="css/nav.css">
+        <link rel="stylesheet" type = "text/css" href="css/footer.css">
+    </head>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@600&family=Palanquin+Dark&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@600&family=Palanquin+Dark&family=Yeseva+One&display=swap');
+    </style>
+    <body id="filter-bar">
+        <div class="filter-header">
+            <div class="back-arrow">
+                <a href="product-list-page.html">
+                    <img src="assets/images/left-arrow.png" alt="Back Arrow">
+                </a>
+            </div>
+            <div class ="dog-product-filter-header">
+                <h1>Filter</h1>
+            </div>
+        </div>
+        <hr class="separator">
+        <div class = "filter-section-mobile">
+            <h3 class="filter-sub-heading"> Types</h3>
+            <div class = 'type-section'>
+                <button class = 'type-button'>Food</button>
+                <button class = 'type-button'>Toys</button>
+                <button class = 'type-button'>Bowls</button>
+                <button class = 'type-button'>Walking</button>
+                <button class = 'type-button'>Apparel</button>
+                <button class = 'type-button'>Flea Treatmemt</button>
+                <button class = 'type-button'>Grooming</button>
+            </div>
+            
+            <h3 class="filter-sub-heading" class = "no-underline"> Brand(s)</h3>
+            <select class = 'brand-select'>
+                <option value="option1">Brand A</option>
+                <option value="option2">Brand B</option>
+                <option value="option3">Brand C</option>
+            </select>
+            <h3 class="filter-sub-heading" class = "no-underline"> Pet Size/Age</h3>
+            <div class = 'size-section'>
+                <button class = 'size-button'>Puppy</button>
+                <button class = 'size-button'>Adult</button>
+                <button class = 'size-button'>Senior</button>
+                <button class = 'size-button'>Small</button>
+                <button class = 'size-button'>Medium</button>
+                <button class = 'size-button'>Large</button>
+            </div>
+            <button class ='confirm-button' disabled>Confirm Changes</button>
+        </div>
+    </body>
+</html>
