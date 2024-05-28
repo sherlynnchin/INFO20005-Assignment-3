@@ -1179,6 +1179,64 @@ body,
     }
 }
 
+/*Filter Bar - Mobile*/
+@media (max-width: 390px) {
+
+    #filter-bar .separator {
+        border: none; 
+        border-top: 1px solid #A9A9A9; 
+        width: 100%;
+        margin-top: 0.5em;
+        margin-bottom: 1.8em; 
+    }
+    .filter-header {
+        margin-top: 2em;
+        display: flex;
+        align-items: center;
+    }
+    #filter-bar .back-arrow img{
+        margin-left: 6%;
+        width: 4em;
+        height: auto;
+        display: flex; 
+    }
+    .dog-product-filter-header{
+        margin-left: 3.9em;
+    }
+
+    .filter-section-mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .type-section, .size-section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0.5em;
+    }
+
+    #filter-bar .type-button, #filter-bar .size-button {
+        margin: 0.5em; 
+        border: none;
+        padding: 0.5em 1.5em;
+        border-radius: 0.25em;
+        cursor: pointer;
+        justify-content: center;
+    }
+
+    #filter-bar .confirm-button {
+        margin: 0.25em;
+        margin-top: 4em;  
+        border: none;
+        padding: 0.8em 4em;
+        border-radius: 0.25em;
+        cursor: pointer;
+        justify-content: center;
+        }
+
+}
+
 /* checkout page */
 .progress-bar {
     display: flex;
