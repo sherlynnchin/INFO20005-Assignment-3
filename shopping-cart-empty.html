@@ -4,12 +4,13 @@
     <title>Stefmar</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type = "text/css" href="../css/colours.css">
-    <link rel="stylesheet" type = "text/css" href="../css/layout.css">
-    <link rel="stylesheet" type = "text/css" href="../css/fonts.css">
-    <link rel="stylesheet" type = "text/css" href="../css/nav.css">
-    <link rel="stylesheet" type = "text/css" href="../css/footer.css">
+    <link rel="stylesheet" type = "text/css" href="css/colours.css">
+    <link rel="stylesheet" type = "text/css" href="css/layout.css">
+    <link rel="stylesheet" type = "text/css" href="css/fonts.css">
+    <link rel="stylesheet" type = "text/css" href="css/nav.css">
+    <link rel="stylesheet" type = "text/css" href="css/footer.css">
     <link rel="stylesheet" type = "text/css" href="css/shopping-cart.css">
+
 </head>
 
 <style>
@@ -42,8 +43,8 @@
                         <input type="search" class="search-input" placeholder="Search..."/>
                     </form>
                 </div>
-                <a href="shopping-cart.html" class="shopping-cart-button">
-                    <img src="assets/images/shopping-cart-filled.png" alt="Shopping Cart Button">
+                <a href="shopping-cart-empty.html" class="shopping-cart-button">
+                    <img src="assets/images/bowl.png" alt="Shopping Cart Button">
                 </a>
             </div>
         </div>
@@ -63,138 +64,102 @@
                     <input type="search" class="search-input" placeholder="Search..."/>
                 </form>
                 <div class="sidebar-cart">
-                    <a href="shopping-cart.html" class="shopping-cart-button">
-                        <img src="assets/images/shopping-cart-filled.png" alt="Shopping Cart Button">
+                    <a href="shopping-cart-empty.html" class="shopping-cart-button">
+                        <img src="assets/images/bowl.png" alt="Shopping Cart Button">
                     </a>
-                    <a href="shopping-cart.html" class="shopping-cart-button">
-                        <p>Your Cart (2)</p>
+                    <a href="shopping-cart-empty.html" class="shopping-cart-button">
+                        <p>Your Cart (0)</p>
                     </a>
                 </div>
             </div>
         </div>
     </nav>
-
     <div class="cart-bar">
         <div class="backbutton">
             <a href="#" onclick="goBack()">
                 <img src="assets/images/left-arrow.png" alt="Back Arrow">
             </a>
         </div>
-        <h1>Checkout</h1>
-    </div>
-    
-    <div class="progress-bar">
-        <div class="circle-darkened">
-            <p>1</p>
-        </div>
-        <div class="line"></div>
-        <div class="circle-normal">
-            <p>2</p>
-        </div>
-        <div class="line"></div>
-        <div class="circle-normal">
-            <p>3</p>
-        </div>
+        <h1>Your Cart (0)</h1>
     </div>
 
-    <div class="checkout-header">
-        <div class="circle-brown-darkened">
-            <p>1</p>
-        </div>
-        <h2>Personal Details</h2>
-    </div>
-    <div class="name-part">
-        <div class="name-input">
-            <div class="card-part-input">
-                <label for="cardname">First Name</label>
-                <input type="text" id="cardname" name="cardname" placeholder="First Name">
-            </div>
-            <div class="card-part-input">
-                <label for="cardname">Last Name</label>
-                <input type="text" id="cardname" name="cardname" placeholder="Last Name">
-            </div>
-        </div>
-        <div class="card-part-input">
-            <label for="cardnum">Phone Number</label>
-            <input type="text" id="cardnum" name="cardnum" placeholder="+61 XXXXXXXXX">
-        </div> 
-    </div>
-
-    <div class="checkout-header">
-        <div class="circle-brown-darkened">
-            <p>2</p>
-        </div>
-        <h2>Address Details</h2>
-    </div>
-    <div class="card-part-row">
-        <div class="card-part">
-            <label for="expmonth">Country</label>
-            <select name="cardexpmonth" id="cardexpmonth">
-                <option value="placeholder" disabled selected>Country</option>
-                <option value="jan">Afghanistan</option>
-                <option value="feb">Albania</option>
-                <option value="mar">Algeria</option>
-                <option value="apr">Andorra</option>
-                <option value="may">Angola</option>
-                <option value="june">Argentina</option>
-                <option value="july">Armenia</option>
-                <option value="aug">Australia</option>
-                <option value="sept">Austria</option>
-                <option value="nov">Bahamas</option>
-                <option value="dec">Bangladesh</option>
-            </select>
-        </div>
-        <div class="card-ccv">
-            <label for="cardccv">Postal Code</label>
-            <input type="text" id="cardccv" name="cardccv" placeholder="XXXX">
-        </div>
-    </div>
-    <div class="card-part">
-        <div class="card-part-input">
-            <label for="cardname">Address Line 1</label>
-            <input type="text" id="cardname" name="cardname" placeholder="">
-        </div>
-        <div class="card-part-input">
-            <label for="cardnum">Address Line 2</label>
-            <input type="text" id="cardnum" name="cardnum" placeholder="">
-        </div> 
-    </div>
-    <div class="card-part-row">
-        <div class="card-part">
-            <label for="expmonth">State</label>
-            <select name="cardexpmonth" id="cardexpmonth">
-                <option value="placeholder" disabled selected>State</option>
-                <option value="jan">Queensland</option>
-                <option value="feb">Tasmania</option>
-                <option value="mar">NSW</option>
-                <option value="apr">Victoria</option>
-                <option value="may">Western Australia</option>
-                <option value="june">South Australia</option>
-            </select>
-        </div>
-        <div class="card-ccv">
-            <label for="cardccv">City</label>
-            <input type="text" id="cardccv" name="cardccv" placeholder="Enter City ">
-        </div>
-    </div>
-
-    <div class="card-part">
-        <div class="card-part-input">
-            <label for="cardname">Additional Information</label>
-            <input type="text" id="cardname" name="cardname" placeholder="Unit/Apartment Number etc">
-        </div>
-    </div>
-
-    <div class="card-part">
+    <div class="empty-cart">
+        <img src="assets/images/sad-cat-cart.png" alt="Sad Cat">
+        <h1>Your Cart is Empty</h1>
+        <p>Looks like you haven’t added anything into your cart yet!</p>
         <div class="checkout">
-            <a href="checkout2.html">
-                <button class="checkout-button">
-                    <div class="checkout-text">Proceed</div>
+            <a href="product-list-page.html">
+                <button class="empty-cart-button">
+                    <div class="checkout-text">Shop Now</div>
                 </button>
             </a>
         </div>
     </div>
 
+    <div class="best-sellers">
+        <div class="best-sellers-header">
+            <h1>You May Also Like:</h1>
+            <hr class="hr-line-right">
+        </div>
+        <div class="best-seller-product-list">
+            <div class="best-seller-product">
+                <div class="product-item">
+                    <a class="product-button" href="./coprice-product-page.html">
+                        <img src="assets/images/coprice.png" alt="Coprice">
+                    </a>
+                    <div class="product-info">
+                        <span class="product-label">Coprice Working Dog Beef</span>
+                        <span class="product-price">$45.99</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a class="product-button" href="./supervite-product-page.html">
+                        <img src="assets/images/kazoo.png" alt="Kazoo">
+                    </a>
+                    <div class="product-info">
+                        <span class="product-label">Kazoo Scratch Post High Bed w/Rope Ash</span>
+                        <span class="product-price">$235.99</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a class="product-button" href="#">
+                        <img src="assets/images/catit.png" alt="Catit">
+                    </a>
+                    <div class="product-info">
+                        <span class="product-label">Catit 2.0 Cat Senses Food Tree</span>
+                        <span class="product-price">$44.99</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a class="product-button" href="#">
+                        <img src="assets/images/optimum.png" alt="Optimum">
+                    </a>
+                    <div class="product-info">
+                        <span class="product-label">Optimum Dog Wet 6x400g Beef Rice</span>
+                        <span class="product-price">$22.99</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a class="product-button" href="#">
+                        <img src="assets/images/bb-dog-bed.png" alt="BB Dog Bed">
+                    </a>
+                    <div class="product-info">
+                        <span class="product-label">Barkley & Bella Dog Bed 65x55 Manhattan Almond</span>
+                        <span class="product-price">$89.99</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <a class="product-button" href="#">
+                        <img src="assets/images/carrier.png" alt="BonoFido">
+                    </a>
+                    <div class="product-info">
+                        <span class="product-label">Bono Fido Carrier Port A Pet Small</span>
+                        <span class="product-price">$89.99</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer id="footer" class="footer-desktop">
         <ul class="footer-nav">
@@ -300,6 +265,6 @@
         </div>
     </footer>
 
-    <script src="scripts.js"></script> 
+    <script src="./scripts.js"></script>
 </body>
 </html>
