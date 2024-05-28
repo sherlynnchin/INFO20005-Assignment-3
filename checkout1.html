@@ -96,105 +96,111 @@
             <p>3</p>
         </div>
     </div>
-
-    <div class="checkout-header">
-        <div class="circle-brown-darkened">
-            <p>1</p>
+    <form id="checkoutForm">
+        <div class="checkout-header">
+            <div class="circle-brown-darkened">
+                <p>1</p>
+            </div>
+            <h2>Personal Details</h2>
         </div>
-        <h2>Personal Details</h2>
-    </div>
-    <div class="name-part">
-        <div class="name-input">
-            <div class="card-part-input">
-                <label for="cardname">First Name</label>
-                <input type="text" id="cardname" name="cardname" placeholder="First Name">
+        <div class="name-part">
+            <div class="name-input">
+                <div class="card-part-input">
+                    <label for="firstName">First Name *</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+                    <span id="firstNameError" class="error-message"></span>
+                </div>
+                <div class="card-part-input">
+                    <label for="lastName">Last Name *</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+                    <span id="lastNameError" class="error-message"></span>
+                </div>
             </div>
             <div class="card-part-input">
-                <label for="cardname">Last Name</label>
-                <input type="text" id="cardname" name="cardname" placeholder="Last Name">
+                <label for="phoneNumber">Phone Number * (Country code not required)</label>
+                <input type="number" id="phoneNumber" name="phoneNumber" placeholder="1234567890" required>
+                <span id="phoneNumberError" class="error-message"></span>
+            </div> 
+        </div>
+
+        <div class="checkout-header">
+            <div class="circle-brown-darkened">
+                <p>2</p>
+            </div>
+            <h2>Address Details</h2>
+        </div>
+        <div class="card-part-row">
+            <div class="card-part">
+                <label for="country">Country *</label>
+                <select name="country" id="country" required>
+                    <option value="placeholder" disabled selected>Country</option>
+                    <option value="Afghanistan">Afghanistan</option>
+                    <option value="Albania">Albania</option>
+                    <option value="Algeria">Algeria</option>
+                    <option value="Andorra">Andorra</option>
+                    <option value="Angola">Angola</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Armenia">Armenia</option>
+                    <option value="Australia">Australia</option>
+                    <option value="Austria">Austria</option>
+                    <option value="Bahamas">Bahamas</option>
+                    <option value="Bangladesh">Bangladesh</option>
+                </select>
+                <span id="countryError" class="error-message"></span>
+            </div>
+            <div class="card-ccv">
+                <label for="postalCode">Postal Code *</label>
+                <input type="number" id="postalCode" name="postalCode" placeholder="XXXX" maxlength="10" minlength="4" required>
+                <span id="postalCodeError" class="error-message"></span>
             </div>
         </div>
-        <div class="card-part-input">
-            <label for="cardnum">Phone Number</label>
-            <input type="text" id="cardnum" name="cardnum" placeholder="+61 XXXXXXXXX">
-        </div> 
-    </div>
-
-    <div class="checkout-header">
-        <div class="circle-brown-darkened">
-            <p>2</p>
-        </div>
-        <h2>Address Details</h2>
-    </div>
-    <div class="card-part-row">
         <div class="card-part">
-            <label for="expmonth">Country</label>
-            <select name="cardexpmonth" id="cardexpmonth">
-                <option value="placeholder" disabled selected>Country</option>
-                <option value="jan">Afghanistan</option>
-                <option value="feb">Albania</option>
-                <option value="mar">Algeria</option>
-                <option value="apr">Andorra</option>
-                <option value="may">Angola</option>
-                <option value="june">Argentina</option>
-                <option value="july">Armenia</option>
-                <option value="aug">Australia</option>
-                <option value="sept">Austria</option>
-                <option value="nov">Bahamas</option>
-                <option value="dec">Bangladesh</option>
-            </select>
+            <div class="card-part-input">
+                <label for="address1">Address Line 1 *</label>
+                <input type="text" id="address1" name="address1" placeholder="" required>
+                <span id="address1Error" class="error-message"></span>
+            </div>
+            <div class="card-part-input">
+                <label for="address2">Address Line 2</label>
+                <input type="text" id="address2" name="address2" placeholder="">
+            </div> 
         </div>
-        <div class="card-ccv">
-            <label for="cardccv">Postal Code</label>
-            <input type="text" id="cardccv" name="cardccv" placeholder="XXXX">
+        <div class="card-part-row">
+            <div class="card-part">
+                <label for="state">State *</label>
+                <select name="state" id="state" required>
+                    <option value="placeholder" disabled selected>State</option>
+                    <option value="Queensland">Queensland</option>
+                    <option value="Tasmania">Tasmania</option>
+                    <option value="NSW">NSW</option>
+                    <option value="Victoria">Victoria</option>
+                    <option value="Western Australia">Western Australia</option>
+                    <option value="South Australia">South Australia</option>
+                </select>
+                <span id="stateError" class="error-message"></span>
+            </div>
+            <div class="card-ccv">
+                <label for="city">City *</label>
+                <input type="text" id="city" name="city" placeholder="Enter City " required>
+                <span id="cityError" class="error-message"></span>
+            </div>
         </div>
-    </div>
-    <div class="card-part">
-        <div class="card-part-input">
-            <label for="cardname">Address Line 1</label>
-            <input type="text" id="cardname" name="cardname" placeholder="">
-        </div>
-        <div class="card-part-input">
-            <label for="cardnum">Address Line 2</label>
-            <input type="text" id="cardnum" name="cardnum" placeholder="">
-        </div> 
-    </div>
-    <div class="card-part-row">
+
         <div class="card-part">
-            <label for="expmonth">State</label>
-            <select name="cardexpmonth" id="cardexpmonth">
-                <option value="placeholder" disabled selected>State</option>
-                <option value="jan">Queensland</option>
-                <option value="feb">Tasmania</option>
-                <option value="mar">NSW</option>
-                <option value="apr">Victoria</option>
-                <option value="may">Western Australia</option>
-                <option value="june">South Australia</option>
-            </select>
+            <div class="card-part-input">
+                <label for="additionalInfo">Additional Information</label>
+                <input type="text" id="additionalInfo" name="additionalInfo" placeholder="Unit/Apartment Number etc">
+            </div>
         </div>
-        <div class="card-ccv">
-            <label for="cardccv">City</label>
-            <input type="text" id="cardccv" name="cardccv" placeholder="Enter City ">
-        </div>
-    </div>
 
-    <div class="card-part">
-        <div class="card-part-input">
-            <label for="cardname">Additional Information</label>
-            <input type="text" id="cardname" name="cardname" placeholder="Unit/Apartment Number etc">
-        </div>
-    </div>
-
-    <div class="card-part">
-        <div class="checkout">
-            <a href="checkout2.html">
-                <button class="checkout-button">
+        <div class="card-part">
+            <div class="checkout">
+                <button type="submit" id="submitButton" class="checkout-button">
                     <div class="checkout-text">Proceed</div>
                 </button>
-            </a>
+            </div>
         </div>
-    </div>
-
+    </form>
 
     <footer id="footer" class="footer-desktop">
         <ul class="footer-nav">
