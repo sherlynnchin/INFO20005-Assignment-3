@@ -115,7 +115,7 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
 .subtotal h1, .suggestion h1,
 .checkout-header h2, .confirmation h2,
 .order-details-button a, .payment-summary-details h1,
-.payment-summary-details h3 {
+.payment-summary-details h3, .best-sellers-header h1 {
   font-family: 'KoHo';
   font-size: 2em;
 }

@@ -51,7 +51,8 @@ footer {
 }
 
 .addtocart,
-.fa-cart-plus {
+.fa-cart-plus,
+.empty-cart-button {
   background:#C3D9DE;
 }
 
