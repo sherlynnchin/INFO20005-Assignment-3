@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Stefmar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type = "text/css" href="../css/colours.css">
+    <link rel="stylesheet" type = "text/css" href="../css/layout.css">
+    <link rel="stylesheet" type = "text/css" href="../css/fonts.css">
+    <link rel="stylesheet" type = "text/css" href="../css/nav.css">
+    <link rel="stylesheet" type = "text/css" href="../css/footer.css">
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@600&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@600&family=Palanquin+Dark&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=KoHo:wght@600&family=Palanquin+Dark&family=Yeseva+One&display=swap');
+</style>
+
+<body>
+    <nav>
+        <div class="navbar-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Stefmar Logo">
+                </a>
+            </div>
+            <div class="menu-button">
+                <img src="assets/images/menu-icon.png" alt="Menu Icon">
+            </div>
+            <ul class="nav-bar">
+                <a href="index.html">Home</a>
+                <a href="index.html#about-us">About Us</a>
+                <a href="product-list-page.html">Shop</a>
+                <a href="#">FAQ</a>
+                <a href="#footer">Contact Us</a>
+            </ul>
+            <div class="icons">
+                <div class="search-container">
+                    <form class="search-box">
+                        <input type="search" class="search-input" placeholder="Search..."/>
+                    </form>
+                </div>
+                <a href="shopping-cart.html" class="shopping-cart-button">
+                    <img src="assets/images/shopping-cart-filled.png" alt="Shopping Cart Button">
+                </a>
+            </div>
+        </div>
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Stefmar Logo">
+                </a>
+            </div>
+            <a href="index.html">Home</a>
+            <a href="index.html#about-us">About Us</a>
+            <a href="product-list-page.html">Shop</a>
+            <a href="#">FAQ</a>
+            <a href="#footerMobile">Contact Us</a>
+            <div class="sidebar-icons">
+                <form class="search-box">
+                    <input type="search" class="search-input" placeholder="Search..."/>
+                </form>
+                <div class="sidebar-cart">
+                    <a href="shopping-cart.html" class="shopping-cart-button">
+                        <img src="assets/images/shopping-cart-filled.png" alt="Shopping Cart Button">
+                    </a>
+                    <a href="shopping-cart.html" class="shopping-cart-button">
+                        <p>Your Cart (2)</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <div class="navigation-flow">
+            <div class="back-arrow">
+                <a href="product-list-page.html">
+                    <img src="assets/images/left-arrow.png" alt="Back Arrow">
+                </a>
+            </div>
+            <div class="previous-page">
+                <a href="product-list-page.html">
+                    <p>Dog Products</p>
+                </a>
+            </div>
+            <div class="previous-page">
+                <p>></p>
+            </div>
+            <div class="previous-page">
+                <a href="product-list-page.html">
+                    <p>Dog Food</p>
+                </a>
+            </div>
+        </div>
+        <div class="product-container">
+            <div class="product-image">
+                <div class="product-image-list">
+                    <div class="small-square">
+                        <img src="assets/images/royal-canin-details.png" alt="Royal Canine">
+                    </div>
+                    <div class="small-square">
+                        <img src="assets/images/royal-canin-details2.jpg" alt="Royal Canine">
+                    </div>
+                    <div class="small-square">
+                        <img src="assets/images/royal-canin-details3.jpg" alt="Royal Canine">
+                    </div>
+                </div>
+                <div class="main-product">
+                    <img src="assets/images/royal-canin-medium-adult.png" alt="Royal Canine Main Photo">
+                </div>
+            </div>
+
+            <div class="product-image-mobile">
+                <div class="main-product">
+                    <img src="assets/images/royal-canin-medium-adult.png" alt="Royal Canine Main Photo">
+                </div>
+                <div class="product-image-list">
+                    <img src="assets/images/left-arrow-product.png" alt="Left Arrow">
+                    <div class="small-square">
+                        <img src="assets/images/royal-canin-details.png" alt="Royal Canine">
+                    </div>
+                    <div class="small-square">
+                        <img src="assets/images/royal-canin-details2.jpg" alt="Royal Canine">
+                    </div>
+                    <img src="assets/images/right-arrow.png" alt="Right Arrow">
+                </div>
+            </div>
+
+            <div class="product-details">
+                <div class="product-header">
+                    <h1>Royal Canin Medium Adult Dry Food</h1>
+                </div>
+                <div class="product-rating">
+                    <div class="stars">
+                        <img src="assets/images/4-5-star-rating.png" alt="Star Rating">
+                        <a href="#reviews" class="current-reviews">
+                            <p>(130 reviews)</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="product-detail-price">
+                    <h2 id="priceDisplay">$109.99</h2>
+                </div>
+                <div class="product-detail-selection">
+                    <div class="size-selection">
+                        <h3>Size (kg)</h3>
+                        <div class="circles">
+                            <div class="size-circle-container">
+                                <input type="radio" name="size" value="15" onchange="updatePrice3(this.value)" checked>
+                                <label for="size-15">15</label>
+                            </div>
+                            <div class="size-circle-container">
+                                <input type="radio" name="size" value="30" onchange="updatePrice3(this.value)">
+                                <label for="size-30">30</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quantity">
+                        <h3>Quantity</h3>
+                        <div class="counter">
+                            <span class="down" onClick="decreaseCount(this)">-</span>
+                            <input type="text" value="1">
+                            <span class="up" onClick='increaseCount(this)'>+</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-to-cart">
+                    <button class="addtocart">
+                        <div class="pretext">Add to Cart</div>
+                        <div class="pretext done">
+                            <div class="posttext">Added to Cart!</div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="more-info">
+            <div class="more-info-button">
+                <button id="toggleButton" onclick="toggleDescription('description')">Product Description<img src="assets/images/down-arrow.png" alt="Down Arrow"></button>
+                <div id="description" style="display: none;">
+                    <p>ROYAL CANIN® Medium Adult in Gravy supports optimal digestive health, as well as helping to maintain a healthy balance of intestinal flora.</p>
+                    <p>Thanks to a specific antioxidant complex and additional prebiotics, ROYAL CANIN® Medium Adult 
+                        in Gravy helps to support and maintain your dog's natural defences.</p>
+                </div>
+            </div>
+            <div class="more-info-button">
+                <button id="toggleButton" onclick="toggleDescription('recommendation')">Recommended For<img src="assets/images/down-arrow.png" alt="Down Arrow"></button>
+                <div id="recommendation" style="display: none;">
+                    <p>Suitable for dogs aged between 12 months and 10 years old that weigh between 11-25 kg</p>
+                </div>
+            </div>
+            <div class="more-info-button">
+                <button id="toggleButton" onclick="toggleDescription('shipping')">Shipping Details<img src="assets/images/down-arrow.png" alt="Down Arrow"></button>
+                <div id="shipping" style="display: none;">
+                    <p>Stefmar is able to deliver this product right to your doorstep!</p>
+                    <p>Shipping is free for orders over AUD100.</p>
+                </div>
+            </div>
+        </div>
+        <div class="ingredients">
+            <div class="ingredients-header">
+                <h1>Ingredients</h1>
+            </div>
+            <div class="ingredient-details">
+                <div class="big-circle-container">
+                    <div class="big-circle1">
+                        <img src="assets/images/chicken.png" alt="Chicken">
+                    </div>
+                    <h2>Chicken</h2>
+                    <p>Supports red blood cells and the assimilation of fats, carbs, and proteins.</p>
+                </div>
+                <div class="big-circle-container">
+                    <div class="big-circle2">
+                        <img src="assets/images/wholegrain-barley.png" alt="Wholegrain Barley">
+                    </div>
+                    <h2>Wholegrain Barley</h2>
+                    <p>Prevents constipation and promotes the growth of beneficial bacteria.</p>
+                </div>
+                <div class="big-circle-container">
+                    <div class="big-circle3">
+                        <img src="assets/images/corn.png" alt="Corn">
+                    </div>
+                    <h2>Corn</h2>
+                    <p>Provides easily digestible carbohydrates, which serves as a key energy source.</p>
+                </div>
+            </div>
+        </div>
+        <div id="reviews" class="reviews">
+            <div class="reviews-header">
+                <h1>Reviews</h1>
+                <hr class="hr-line-right">
+            </div>
+            <div class="reviews-list">
+                <div class="review">
+                    <h1>Tasty Morsels</h1>
+                    <img src="assets/images/4-5-star-rating.png" alt="Rating">
+                    <p>A tightly-pressed kibble, holds together without crumbling in transport and storage.</p>
+                    <div class="profile">
+                        <img src="assets/images/user.png" alt="Profile Picture">
+                        <h1>Lee Seokmin</h1>
+                    </div>
+                </div>
+                <div class="review">
+                    <h1>Consistent Quality</h1>
+                    <img src="assets/images/4-5-star-rating.png" alt="Rating">
+                    <p>The quality seems good, the content description clear and importantly the alignment with Australian food standards</p>
+                    <div class="profile">
+                        <img src="assets/images/user.png" alt="Profile Picture">
+                        <h1>Akira Kurusu</h1>
+                    </div>
+                </div>
+                <div class="review">
+                    <h1>Silky coat</h1>
+                    <img src="assets/images/4-5-star-rating.png" alt="Rating">
+                    <p>Higher end product but for a food reason, my dog loves this flavour.</p>
+                    <div class="profile">
+                        <img src="assets/images/user.png" alt="Profile Picture">
+                        <h1>Connor Anderson</h1>
+                    </div>
+                </div>
+                <div class="review">
+                    <h1>First time order</h1>
+                    <img src="assets/images/4-5-star-rating.png" alt="Rating">
+                    <p>Great - Milo seems to really enjoy this food and it seems to work for his gut</p>
+                    <div class="profile">
+                        <img src="assets/images/user.png" alt="Profile Picture">
+                        <h1>Kaveh</h1>
+                    </div>
+                </div>
+                <div class="review">
+                    <h1>Fantastic dog food</h1>
+                    <img src="assets/images/4-5-star-rating.png" alt="Rating">
+                    <p>My dog loves this dry food and noticeably prefers it to other types.</p>
+                    <div class="profile">
+                        <img src="assets/images/user.png" alt="Profile Picture">
+                        <h1>Dan Heng</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer" class="footer-desktop">
+        <ul class="footer-nav">
+            <a href="index.html">Home</a>
+            <a href="index.html#about-us">About Us</a>
+            <a href="product-list-page.html">Shop</a>
+            <a href="#">FAQ</a>
+            <div class="footer-logo">
+                <img src="assets/images/footer-logo.png" alt="Stefmar Logo">
+            </div>
+        </ul>
+        <div class="footer-contact">
+            <div class="contact-us-header">
+                <h1>Contact Us</h1>
+            </div>
+            <ul class="contact-details">
+                <div class="circle-container">
+                    <div class="circle">
+                        <img src="assets/images/location.png" alt="Location Pin">
+                    </div>
+                    <span>517-519 Bunnerong Rd, Matraville</span>
+                </div>
+                <div class="circle-container">
+                    <div class="circle">
+                        <img src="assets/images/smartphone.png" alt="Smartphone">
+                    </div>
+                    <span>+61 1300 139 756</span>
+                </div>
+                <div class="circle-container">
+                    <div class="circle">
+                        <img src="assets/images/email.png" alt="Email">
+                    </div>
+                    <span>sales@stefmarpetcare.com.au</span>
+                </div>
+            </ul>
+        </div>
+        <div class="footer-socials">
+            <div class="socials-header">
+                <h1>Follow Our Socials</h1>
+            </div>
+            <ul class="socials-details">
+                <div class="circle-container">
+                    <div class="circle">
+                        <img src="assets/images/instagram.png" alt="Instagram logo">
+                    </div>
+                    <span>Instagram</span>
+                </div>
+                <div class="circle-container">
+                    <div class="circle">
+                        <img src="assets/images/facebook.png" alt="Facebook logo">
+                    </div>
+                    <span>Facebook</span>
+                </div>
+                <div class="circle-container">
+                    <div class="circle">
+                        <img src="assets/images/twitter.png" alt="Twitter logo">
+                    </div>
+                    <span>X</span>
+                </div>
+            </ul>
+        </div>
+    </footer>
+
+    <footer id="footerMobile" class="footer-mobile">
+        <div class="mobile-footer-header">
+            <h1>Contact Us</h1>
+        </div>
+        <div class="mobile-footer-content">
+            <div class="content-headers">
+                <div class="circle">
+                    <img src="assets/images/location.png" alt="Location Pin">
+                </div>
+                <div class="circle">
+                    <img src="assets/images/smartphone.png" alt="Smartphone">
+                </div>
+                <div class="circle">
+                    <img src="assets/images/email.png" alt="Email">
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="footer-info">
+                    <p>517-519 Bunnerong Rd, Matraville</p>
+                </div>
+                <div class="footer-info">
+                    <div class="social-media">
+                        <div class="circle">
+                            <img src="assets/images/instagram.png" alt="Instagram logo">
+                        </div>
+                        <div class="circle">
+                            <img src="assets/images/facebook.png" alt="Facebook logo">
+                        </div>
+                        <div class="circle">
+                            <img src="assets/images/twitter.png" alt="Twitter logo">
+                        </div>
+                    </div>
+                    <p>+61 1300 139 756</p>
+                </div>
+                <div class="footer-info">
+                    <p>sales@stefmar-
+                        petcare.com.au</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="scripts.js"></script>   
+</body>
+</html>

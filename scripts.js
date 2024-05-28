@@ -65,6 +65,23 @@ function updatePrice2(size) {
     selectedContainer.classList.add('active');
 }
 
+function updatePrice3(size) {
+    if (size === "15") {
+        document.getElementById("priceDisplay").innerText = "$109.99";
+    } else if (size === "30") {
+        document.getElementById("priceDisplay").innerText = "$189.99";
+    }
+
+    const containers = document.querySelectorAll('.size-circle-container');
+
+    containers.forEach(container => {
+        container.classList.remove('active');
+    });
+
+    const selectedContainer = document.querySelector(`input[name="size"][value="${size}"]`).parentNode;
+    selectedContainer.classList.add('active');
+}
+
 function increaseCount(element) {
     var input = element.parentNode.querySelector('input');
     var value = parseInt(input.value, 10);
