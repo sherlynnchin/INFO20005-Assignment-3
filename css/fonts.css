@@ -27,11 +27,11 @@ h2,
   
 p, .product-detail-selection,.filter-sub-heading ,.type-button,
  .size-button, .brand-select, .confirm-button, .cart-item-info,
-  .cart-item-info h2, .page-number {
+  .cart-item-info h2, .page-number,  .sort-button-mobile, .filter-button {
     font-family: 'KoHo';
   }
 
-  .sort-button {
+  .sort-button-desktop{
     font-family: 'KoHo';
     font-size: 1em;
   }
@@ -105,7 +105,7 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
   letter-spacing: 0.04em;
 }
 
-.product-info, .dog-products-info {
+.product-info, .product-list-info-desktop {
   font-family: 'KoHo';
   letter-spacing: 0.02em;
 }
@@ -216,6 +216,16 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
 @media (max-width: 391px){
   .dog-product-list-header {  
       font-size: 0.8em;
-
   }
+
+ .product-list-info-mobile{
+    font-family: 'KoHo';
+    font-size: 0.8em;
+    letter-spacing: 0.01em;
+  }
+  .sort-button-mobile, .filter-button {
+    font-size: 0.8em;
+  }
+
+ 
 }
