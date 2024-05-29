@@ -208,7 +208,9 @@ document.addEventListener('DOMContentLoaded', () =>{
             lastName.setCustomValidity("");
         }
 
-        if(!phoneNumber.value || phoneNumber.length < 10) {
+        const phoneNumberPattern = /^\d*$/;
+
+        if(!phoneNumber.value || !phoneNumberPattern.test(phoneNumber.value)) {
             phoneNumber.setCustomValidity("Please enter a valid phone number.");
         } else {
             phoneNumber.setCustomValidity("");
@@ -220,8 +222,10 @@ document.addEventListener('DOMContentLoaded', () =>{
             country.setCustomValidity("");
         }
 
-        if(!postalCode.value || postalCode.length < 4) {
-            postalCode.setCustomValidity("Please enter a valid postal code.");
+        const postalCodePattern = /^[0-9]{4}$/;
+
+        if(!postalCode.value || !postalCodePattern.test(postalCode.value)) {
+            postalCode.setCustomValidity("Please enter a valid  4 digit postal code.");
         } else {
             postalCode.setCustomValidity("");
         }
