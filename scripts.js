@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () =>{
     const button2 = document.querySelector(".addtocartmobile");
     let done2 = null;
     if (button2) {
-        xdone2 = button2.querySelector(".done");
+        done2 = button2.querySelector(".done");
     }
     console.log(button1, button2);
     
