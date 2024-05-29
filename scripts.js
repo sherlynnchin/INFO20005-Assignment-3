@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () =>{
             lastName.setCustomValidity("");
         }
 
-        if(!phoneNumber.checkValidity()) {
+        if(!phoneNumber.value || phoneNumber.length < 10) {
             phoneNumber.setCustomValidity("Please enter a valid phone number.");
         } else {
             phoneNumber.setCustomValidity("");
@@ -238,11 +238,7 @@ document.addEventListener('DOMContentLoaded', () =>{
             city.setCustomValidity("");
         }
 
-        checkoutForm.querySelectorAll('input, select').forEach((input) =>{
-            input.reportValidity();
-        })
-
-        if (!checkoutForm.checkValidity()){
+        if (!checkoutForm.reportValidity()){
             event.preventDefault();
             event.stopPropagation();
         }
