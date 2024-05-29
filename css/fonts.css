@@ -149,6 +149,10 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
   text-decoration: underline
 }
 
+.filter-button {
+  text-decoration: none;
+}
+
 .mobile-footer-header h1,
 .footer-info p {
   font-weight: 100;
