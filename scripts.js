@@ -184,7 +184,7 @@ deliveryButtons.forEach(radio => {
     })
 })
 
-/* form validation */
+//Validation Form for checkout1.html
 document.addEventListener('DOMContentLoaded', () =>{
     const proceedButton = document.querySelector('.checkout-button');
     const checkoutButton = document.getElementById ('checkoutForm');
@@ -213,7 +213,6 @@ document.addEventListener('DOMContentLoaded', () =>{
             }
     
             const phoneNumberPattern = /^\d*$/;
-    
             if(!phoneNumber.value || !phoneNumberPattern.test(phoneNumber.value)) {
                 phoneNumber.setCustomValidity("Please enter a valid phone number.");
             } else {
@@ -227,7 +226,6 @@ document.addEventListener('DOMContentLoaded', () =>{
             }
     
             const postalCodePattern = /^[0-9]{4}$/;
-    
             if(!postalCode.value || !postalCodePattern.test(postalCode.value)) {
                 postalCode.setCustomValidity("Please enter a valid  4 digit postal code.");
             } else {
