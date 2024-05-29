@@ -254,3 +254,29 @@ document.addEventListener('DOMContentLoaded', () =>{
     }
     
 })
+
+//Payment Buttons to stay active in checkout2.html
+document.addEventListener('DOMContentLoaded', () =>{
+    const paymentButtons = document.querySelectorAll (".payment-button");
+    
+    if (paymentButtons){
+        paymentButtons.forEach(button =>{
+            button.addEventListener('click', () => {
+                paymentButtons.forEach(btn =>{
+                    btn.classList.remove('active');
+                });
+                btn.classList.add('active');
+            })
+            
+        })
+       
+        const inputFields = document.querySelectorAll('input,select');
+        inputFields.forEach(input =>{
+            const activeButton = document.querySelector('.payment-button.active');
+            if (!activeButton){
+                paymentButton[0].classList.add('active');
+            }
+        })
+
+    }
+})
