@@ -174,17 +174,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 /* put any other js above this pls */
 
-//Checkout button enabled
-const checkoutButton = document.getElementById('checkout-button');
-const deliveryButtons = document.querySelectorAll('input[name="selector"]')
 
-deliveryButtons.forEach(radio => {
-    radio.addEventListener('change', () => {
-        checkoutButton.disabled = false;
-    })
-})
 
-//Validation Form for checkout1.html
+//Validation Form for checkout1.html & checkout2.html
+
 document.addEventListener('DOMContentLoaded', () =>{
     const proceedButton = document.querySelector('.checkout-button');
     const checkoutButton = document.getElementById ('checkoutForm');
@@ -244,7 +237,7 @@ document.addEventListener('DOMContentLoaded', () =>{
                 city.setCustomValidity("");
             }
     
-            if (!checkoutForm.reportValidity()){
+            if (!checkoutButton.reportValidity()){
                 event.preventDefault();
                 event.stopPropagation();
             }
@@ -253,30 +246,4 @@ document.addEventListener('DOMContentLoaded', () =>{
 
     }
     
-})
-
-//Payment Buttons to stay active in checkout2.html
-document.addEventListener('DOMContentLoaded', () =>{
-    const paymentButtons = document.querySelectorAll (".payment-button");
-    
-    if (paymentButtons){
-        paymentButtons.forEach(button =>{
-            button.addEventListener('click', () => {
-                paymentButtons.forEach(btn =>{
-                    btn.classList.remove('active');
-                });
-                btn.classList.add('active');
-            })
-            
-        })
-       
-        const inputFields = document.querySelectorAll('input,select');
-        inputFields.forEach(input =>{
-            const activeButton = document.querySelector('.payment-button.active');
-            if (!activeButton){
-                paymentButton[0].classList.add('active');
-            }
-        })
-
-    }
 })

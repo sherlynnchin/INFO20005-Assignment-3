@@ -249,9 +249,9 @@ nav, .sidebar {
   transition: 0.7s;  
 }
 
-.payment-method button:active, .payment-method button:focus{
-  background-color: #89a278;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+.payment-method button:active, .payment-method button:focus, .payment-method button:target{
+  background-color: #89a278 ;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2) ; 
 }
 
 .product-list-product-button-desktop, .product-list-product-button-mobile{
