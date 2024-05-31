@@ -172,10 +172,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 
-/* put any other js above this pls */
-
-
-
 //Validation Form for checkout1.html & checkout2.html
 document.addEventListener('DOMContentLoaded', () => {
     //Validation Form for checkout1.html
