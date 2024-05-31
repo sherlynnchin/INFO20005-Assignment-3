@@ -178,9 +178,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 //Validation Form for checkout1.html & checkout2.html
 document.addEventListener('DOMContentLoaded', () => {
+    //Validation Form for checkout1.html
     const proceedButton1 = document.getElementById('proceedButton1');
     const checkoutForm1 = document.getElementById('checkoutForm1');
-
+    
     if (proceedButton1 && checkoutForm1) {
         proceedButton1.addEventListener('click', (event) => {
             console.log('Proceed button clicked');
@@ -265,7 +266,7 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     } 
-
+    //Validation form for checkout2.html
     const proceedButton2 = document.getElementById('proceedButton2');
     const checkoutForm2 = document.getElementById ('checkoutForm2');
 
