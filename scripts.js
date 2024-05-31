@@ -172,13 +172,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 
-//Validation Form for checkout1.html & checkout2.html
-document.addEventListener('DOMContentLoaded', () =>{
-    const proceedButton = document.querySelector('.checkout-button');
-    const checkoutButton = document.getElementById ('checkoutForm');
+/* put any other js above this pls */
 
-    if (proceedButton){
-        proceedButton.addEventListener('click', (event) => {
+
+
+//Validation Form for checkout1.html & checkout2.html
+document.addEventListener('DOMContentLoaded', () => {
+    const proceedButton1 = document.getElementById('proceedButton1');
+    const checkoutForm1 = document.getElementById('checkoutForm1');
+
+    if (proceedButton1 && checkoutForm1) {
+        proceedButton1.addEventListener('click', (event) => {
+            console.log('Proceed button clicked');
+
             const firstName = document.getElementById('firstName');
             const lastName = document.getElementById('lastName');
             const phoneNumber = document.getElementById('phoneNumber');
@@ -188,57 +194,162 @@ document.addEventListener('DOMContentLoaded', () =>{
             const state = document.getElementById('state');
             const city = document.getElementById('city');
     
-            if(!firstName.value) {
+            let formIsValid = true;
+
+            if (!firstName.value) {
                 firstName.setCustomValidity("Please enter your first name.");
+                formIsValid = false;
             } else {
                 firstName.setCustomValidity("");
             }
     
-            if(!lastName.value) {
+            if (!lastName.value) {
                 lastName.setCustomValidity("Please enter your last name.");
+                formIsValid = false;
             } else {
                 lastName.setCustomValidity("");
             }
     
             const phoneNumberPattern = /^\d*$/;
-            if(!phoneNumber.value || !phoneNumberPattern.test(phoneNumber.value)) {
+            if (!phoneNumber.value || !phoneNumberPattern.test(phoneNumber.value)) {
                 phoneNumber.setCustomValidity("Please enter a valid phone number.");
+                formIsValid = false;
             } else {
                 phoneNumber.setCustomValidity("");
             }
     
-            if(country.value === "placeholder") {
+            if (country.value === "placeholder") {
                 country.setCustomValidity("Please select a country.");
+                formIsValid = false;
             } else {
                 country.setCustomValidity("");
             }
+
+            if (state.value === "placeholder") {
+                state.setCustomValidity("Please select a state.");
+                formIsValid = false;
+            } else {
+                state.setCustomValidity("");
+            }
     
             const postalCodePattern = /^[0-9]{4}$/;
-            if(!postalCode.value || !postalCodePattern.test(postalCode.value)) {
-                postalCode.setCustomValidity("Please enter a valid  4 digit postal code.");
+            if (!postalCode.value || !postalCodePattern.test(postalCode.value)) {
+                postalCode.setCustomValidity("Please enter a valid 4 digit postal code.");
+                formIsValid = false;
             } else {
                 postalCode.setCustomValidity("");
             }
     
-            if(!address1.value) {
+            if (!address1.value) {
                 address1.setCustomValidity("Please enter your address.");
+                formIsValid = false;
             } else {
                 address1.setCustomValidity("");
             }
     
-            if(!city.value) {
+            if (!city.value) {
                 city.setCustomValidity("Please enter your city.");
+                formIsValid = false;
             } else {
                 city.setCustomValidity("");
             }
-    
-            if (!checkoutButton.reportValidity()){
+
+            if (!formIsValid) {
+                checkoutForm1.reportValidity()
                 event.preventDefault();
                 event.stopPropagation();
+                console.log('Form is invalid');
+            } else {
+                window.location.href = "checkout2.html";
+                console.log('Form is valid');
             }
-    
         });
+    } 
 
-    }
-    
-})
+    const proceedButton2 = document.getElementById('proceedButton2');
+    const checkoutForm2 = document.getElementById ('checkoutForm2');
+
+    if (proceedButton2 && checkoutForm2){
+        proceedButton2.addEventListener('click', (event) => {
+            console.log('Proceed button clicked');
+
+            const addressSelector = document.querySelector('input[name="selector"]:checked');
+            const cardName = document.getElementById('cardname');
+            const cardNumber = document.getElementById('cardnum');
+            const cardCCV = document.getElementById('cardccv');
+            const expMonth = document.getElementById('cardexpmonth');
+            const expYear = document.getElementById('cardexpyear');
+
+            let formIsValid = true;
+
+            if(!addressSelector) {
+                const addressOptions = document.querySelectorAll('input[name="selector"]');
+                addressOptions.forEach(option =>{
+                    option.setCustomValidity("Please select if billing address is the same as the shipping address.");
+                })
+                formIsValid = false;
+                
+            } else {
+                const addressOptions = document.querySelectorAll('input[name="selector"]');
+                addressOptions.forEach(option =>{
+                    option.setCustomValidity("");
+                })
+            }
+
+            if(!cardName.value) {
+                cardName.setCustomValidity("Please enter your name on the card.");
+                formIsValid = false;
+            } else {
+                cardName.setCustomValidity("");
+            }
+            
+            const cardNumberPattern = /^[0-9]{16}$/;
+            if(!cardNumber.value || !cardNumberPattern.test(cardNumber.value)) {
+                cardNumber.setCustomValidity("Please enter a valid 16-digit card number.");
+                formIsValid = false;
+            } else {
+                cardNumber.setCustomValidity("");
+            }
+
+            const cardCCVPattern = /^[0-9]{4}$/;
+            if(!cardCCV.value || !cardCCVPattern.test(cardCCV.value)) {
+                cardCCV.setCustomValidity("Please enter a valid  4 digit card CCV.");
+                formIsValid = false;
+            } else {
+                cardCCV.setCustomValidity("");
+            }
+
+            if(expMonth.value =="placeholder") {
+                expMonth.setCustomValidity("Please select an expiration month.");
+                formIsValid = false;
+            } else {
+                expMonth.setCustomValidity("");
+            }
+
+            if(expYear.value =="placeholder") {
+                expYear.setCustomValidity("Please select an expiration year.");
+                formIsValid = false;
+            } else {
+                expYear.setCustomValidity("");
+            }
+
+            if (!formIsValid){
+                checkoutForm2.reportValidity()
+                event.preventDefault();
+                event.stopPropagation();
+                console.log('Form is invalid');
+            }else {
+                window.location.href = "checkout3.html";
+                console.log('Form is valid');
+            }
+
+        })
+
+
+    }  
+
+});
+
+
+
+
