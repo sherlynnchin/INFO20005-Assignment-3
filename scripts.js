@@ -177,7 +177,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 
 //Validation Form for checkout1.html & checkout2.html
-
 document.addEventListener('DOMContentLoaded', () =>{
     const proceedButton = document.querySelector('.checkout-button');
     const checkoutButton = document.getElementById ('checkoutForm');
