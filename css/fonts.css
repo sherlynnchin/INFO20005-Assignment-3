@@ -208,28 +208,16 @@ p, .product-detail-selection,.filter-sub-heading ,.type-button,
   .confirmation p {
     font-size: 0.9em;
   }
-  .big-circle-container p {
+  .big-circle-container p, .dog-product-list-header,
+  .sort-button-mobile, .filter-button {
     font-size: 0.8em;
   }
   .ingredients-header h1 {
     font-size: 1.7em;
   }
-}
-
-/*Dog Product List - Mobile plz dont reorganise this if not i cannot find it T_T*/
-@media (max-width: 391px){
-  .dog-product-list-header {  
-      font-size: 0.8em;
-  }
-
- .product-list-info-mobile{
+  .product-list-info-mobile{
     font-family: 'KoHo';
     font-size: 0.8em;
     letter-spacing: 0.01em;
   }
-  .sort-button-mobile, .filter-button {
-    font-size: 0.8em;
-  }
-
- 
 }
