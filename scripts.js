@@ -96,7 +96,7 @@ function decreaseCount(element) {
     }
 }
 
-
+// Adding slidebar to the add to cart button to indicate that item has been added to cart
 document.addEventListener('DOMContentLoaded', () =>{
     const button1 = document.querySelector(".addtocart");
     let done1 = null;
@@ -171,10 +171,6 @@ document.addEventListener('DOMContentLoaded', (event) => {
         });
     });
 });
-
-/* put any other js above this pls */
-
-
 
 //Validation Form for checkout1.html & checkout2.html
 document.addEventListener('DOMContentLoaded', () => {
